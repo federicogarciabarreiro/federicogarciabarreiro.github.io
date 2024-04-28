@@ -1,7 +1,11 @@
+import NavBar from "./components/NavBar";
+import DarkModeSwitch from "./components/DarkModeSwitch";
+
 function App() {
   return (
     <>
-    <h1>Hello World</h1>
+    <NavBar/>
+    <DarkModeSwitch/>
     </>
   );
 }
