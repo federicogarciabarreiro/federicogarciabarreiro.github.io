@@ -1,12 +1,12 @@
-import NavBar from "./components/NavBar";
-import DarkModeSwitch from "./components/DarkModeSwitch";
+import ThemeSwitcher from "./components/ThemeSwitcher.jsx";
+import { Navbar } from "./components/NavigationBar.jsx";
 
 function App() {
   return (
-    <>
-    <NavBar/>
-    <DarkModeSwitch/>
-    </>
+    <div>
+      <ThemeSwitcher/>
+      <Navbar/>
+    </div>
   );
 }
 
