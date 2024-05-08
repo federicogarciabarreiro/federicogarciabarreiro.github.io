@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-function ScrollProgressBar() {
+function ScrollProgressBar({ parallaxRef }) {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   useEffect(() => {
