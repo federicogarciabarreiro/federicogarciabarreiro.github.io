@@ -1,0 +1,10 @@
+.carouselItem {
+    width: 100%; /* Ajusta el ancho del Carousel.Item al contenedor */
+    height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la relación de aspecto */
+}
+
+.carouselItem img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del Carousel.Item */
+    height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la relación de aspecto */
+    object-fit: cover; /* Cubre completamente el espacio del contenedor, manteniendo la relación de aspecto */
+}
