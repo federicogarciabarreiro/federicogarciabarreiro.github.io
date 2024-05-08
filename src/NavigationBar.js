@@ -2,12 +2,9 @@ import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 
-import './NavigationBar.css';
-
 function NavigationBar() {
     return (
         <>
-            <div className='navigationBarContainer'>
                 <Navbar bg="dark" data-bs-theme="dark">
                     <Container>
                         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -18,7 +15,6 @@ function NavigationBar() {
                         </Nav>
                     </Container>
                 </Navbar>
-            </div>
         </>
     );
 }

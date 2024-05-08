@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-import './ScrollProgressBar.css';
-
 function ScrollProgressBar() {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
@@ -22,9 +20,7 @@ function ScrollProgressBar() {
   }, []);
 
   return (
-    <div className="progressBarContainer">
       <ProgressBar now={scrollPercentage} />
-    </div>
   );
 }
 
