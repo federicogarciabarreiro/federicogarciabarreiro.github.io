@@ -7,11 +7,13 @@ function NavigationBar() {
         <>
                 <Navbar bg="dark" data-bs-theme="dark">
                     <Container>
-                        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                        <Navbar.Brand href="#home">Porfolio</Navbar.Brand>
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link href="#section-0">section-0</Nav.Link>
+                            <Nav.Link href="#section-1">section-1</Nav.Link>
+                            <Nav.Link href="#section-2">section-2</Nav.Link>
+                            <Nav.Link href="#section-3">section-3</Nav.Link>
+                            <Nav.Link href="#section-4">section-4</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>
