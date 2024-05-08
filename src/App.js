@@ -5,6 +5,7 @@ import './App.css';
 
 import NavigationBar from './NavigationBar';
 import SimpleCarousel from './SimpleCarousel';
+import ScrollProgressBar from './ScrollProgressBar';
 
 function App() {
   return (
@@ -27,8 +28,21 @@ function App() {
         </a>
       </header>
       */}
-      
+
       <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <SimpleCarousel/>
+      <ScrollProgressBar/>
     </div>
   );
 }
