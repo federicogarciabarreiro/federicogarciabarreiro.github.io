@@ -3,9 +3,8 @@ import './App.css';
 
 import NavigationBar from './NavigationBar';
 import SimpleCarousel from './SimpleCarousel';
-import ProgressControl from './ProgressControl';
-import CollapsedText from './CollapsedText';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import ScrollProgressBar from './ScrollProgressBar';
+
 import { useRef } from 'react';
 
 import GameIFrame from './GameIFrame';
@@ -19,70 +18,50 @@ function App() {
   return (
     <div className="App">
       <header>
-        <NavigationBar refProp={ref} />
+        <NavigationBar/>
       </header>
 
       <body>
-        <Parallax pages={5} ref={ref}>
-          <ParallaxLayer offset={0} speed={0.5}>
-            <h2>Welcome to my website</h2>
-          </ParallaxLayer>
+        <section id='section-0'/>
+        <GameIFrame
+            title={"Sediento"}
+            embed={"./Sediento/game.html"}
+            maxWidth={600} />
 
-          <ParallaxLayer offset={1} speed={1} factor={1}>
-            <GameIFrame
-              title={"Sediento"}
-              embed={"./Sediento/game.html"}
-              maxWidth={600}/>
-            <SimpleCarousel />
-            <CollapsedText />
-          </ParallaxLayer>
+        <section id='section-1'/>
+        <SimpleCarousel 
+    img0="./pics/first-slide.jpg" t1="Primera imagen" d1=""
+    img1="./pics/second-slide.jpg" t2="Segunda imagen" d2=""
+    img2="./pics/third-slide.jpg" t3="Tercera imagen" d3=""
+/>
 
-          <ParallaxLayer offset={2} speed={1} factor={1}>
-            <div className="container">
-              <div className="row">
 
-                <VideoCard
-                  url=".\Videos\Sparkle.mp4"
-                  title="Título del video"
-                  description="Descripción del video"
-                  buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"}/>}
-                />
-               
-               <VideoCard
-                  url=".\Videos\Sparkle.mp4"
-                  title="Título del video"
-                  description="Descripción del video"
-                />
-                
-                <VideoCard
-                  url=".\Videos\Sparkle.mp4"
-                  title="Título del video"
-                  description="Descripción del video"
-                  buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"}/>}
-                />
-              </div>
+        <section id='section-2'/>
+          <div className="container">
+            <div className="row">
+              <VideoCard
+                url=".\Videos\Sparkle.mp4"
+                title="Título del video"
+                description="Descripción del video"
+                buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"} />}
+              />
+              <VideoCard
+                url=".\Videos\Sparkle.mp4"
+                title="Título del video"
+                description="Descripción del video"
+              />
+              <VideoCard
+                url=".\Videos\Sparkle.mp4"
+                title="Título del video"
+                description="Descripción del video"
+                buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"} />}
+              />
             </div>
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={3} speed={1} factor={1}>
-            <SimpleCarousel />
-            <CollapsedText />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={4} speed={1} factor={1}>
-            <SimpleCarousel />
-            <CollapsedText />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={5} speed={1} factor={1}>
-            <SimpleCarousel />
-            <CollapsedText />
-          </ParallaxLayer>
-        </Parallax>
+          </div>
       </body>
 
       <footer>
-        <ProgressControl/>
+        <ScrollProgressBar />
       </footer>
     </div>
   );

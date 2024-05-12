@@ -3,63 +3,40 @@ import 'holderjs';
 
 import './Carousel.css';
 
-function SimpleCarousel() {
+function SimpleCarousel({ img0, img1, img2, t1, t2, t3, d1, d2, d3 }) {
     return (
         <Carousel data-bs-theme="dark">
             <Carousel.Item className='carouselItem'>
-                {/*<img
-                    className="d-block w-100"
-                    src="holder.js/1920x400?text=Third slide&bg=e5e5e5"
-                    alt="First slide"
-                />*/}
-
                 <img
                     className="d-block w-100"
-                    src={require('./pics/first-slide.jpg')}
-                    alt="First slide"
+                    src={img0}
+                    alt={t1}
                 />
-
                 <Carousel.Caption>
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h5>{t1}</h5>
+                    <p>{d1}</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className='carouselItem'>
-                {/*<img
-                    className="d-block w-100"
-                    src="holder.js/1920x400?text=Third slide&bg=e5e5e5"
-                    alt="Second slide"
-                />*/}
-
                 <img
                     className="d-block w-100"
-                    src={require('./pics/second-slide.jpg')}
-                    alt="Second slide"
+                    src={img1}
+                    alt={t2}
                 />
-
                 <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h5>{t2}</h5>
+                    <p>{d2}</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className='carouselItem'>
-                {/*<img
-                    className="d-block w-100"
-                    src="holder.js/1920x400?text=Third slide&bg=e5e5e5"
-                    alt="Third slide"
-                />*/}
-
                 <img
                     className="d-block w-100"
-                    src={require('./pics/third-slide.jpg')}
-                    alt="Third slide"
+                    src={img2}
+                    alt={t3}
                 />
-
                 <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <h5>{t3}</h5>
+                    <p>{d3}</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
