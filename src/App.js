@@ -12,6 +12,8 @@ import { useRef } from 'react';
 import GameIFrame from './GameIFrame';
 import VideoCard from './VideoCard';
 
+import CustomButton from "./CustomButton";
+
 function App() {
   const ref = useRef();
 
@@ -28,21 +30,40 @@ function App() {
           </ParallaxLayer>
 
           <ParallaxLayer offset={1} speed={1} factor={1}>
-            <GameIFrame 
-              title={"Sediento"} 
-              embed={"./Sediento/game.html"} 
-              h={800} 
-              w={600}/>
+            <GameIFrame
+              title={"Sediento"}
+              embed={"./Sediento/game.html"}
+              h={800}
+              w={600} />
             <SimpleCarousel />
             <CollapsedText />
           </ParallaxLayer>
 
           <ParallaxLayer offset={2} speed={1} factor={1}>
-          <VideoCard 
-              url=".\Videos\Sparkle.mp4"
-            />
-            <SimpleCarousel />
-            <CollapsedText />
+            <div className="container">
+              <div className="row">
+
+                <VideoCard
+                  url=".\Videos\Sparkle.mp4"
+                  title="Título del video"
+                  description="Descripción del video"
+                  buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"}/>}
+                />
+               
+               <VideoCard
+                  url=".\Videos\Sparkle.mp4"
+                  title="Título del video"
+                  description="Descripción del video"
+                />
+                
+                <VideoCard
+                  url=".\Videos\Sparkle.mp4"
+                  title="Título del video"
+                  description="Descripción del video"
+                  buttonComponent={<CustomButton buttonLabel={"Ver más"} buttonUrl={"/ruta-al-video"}/>}
+                />
+              </div>
+            </div>
           </ParallaxLayer>
 
           <ParallaxLayer offset={3} speed={1} factor={1}>
