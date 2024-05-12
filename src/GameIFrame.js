@@ -1,4 +1,5 @@
 import React from 'react';
+import Iframe from 'react-iframe'
 
 function GameIFrame ({ title, embed, h, w }) {
 
@@ -13,14 +14,14 @@ function GameIFrame ({ title, embed, h, w }) {
 
   return (
     <div>
-      <iframe
+      <Iframe
         frameborder="0"
         src={embed}
         title={title}
         width={h}
         height={w}
         allowfullscreen="" 
-      ></iframe>
+      ></Iframe>
     </div>
     
   );

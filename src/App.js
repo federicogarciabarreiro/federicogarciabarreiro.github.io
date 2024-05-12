@@ -10,6 +10,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef } from 'react';
 
 import GameIFrame from './GameIFrame';
+import VideoCard from './VideoCard';
 
 function App() {
   const ref = useRef();
@@ -27,12 +28,19 @@ function App() {
           </ParallaxLayer>
 
           <ParallaxLayer offset={1} speed={1} factor={1}>
-            <GameIFrame title={"Sediento"} embed={"./Sediento/game.html"} h={800} w={600}/>
+            <GameIFrame 
+              title={"Sediento"} 
+              embed={"./Sediento/game.html"} 
+              h={800} 
+              w={600}/>
             <SimpleCarousel />
             <CollapsedText />
           </ParallaxLayer>
 
           <ParallaxLayer offset={2} speed={1} factor={1}>
+          <VideoCard 
+              url=".\Videos\Sparkle.mp4"
+            />
             <SimpleCarousel />
             <CollapsedText />
           </ParallaxLayer>
