@@ -1,7 +1,9 @@
 import React from 'react';
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
 
-function GameIFrame ({ title, embed, h, w }) {
+function GameIFrame({ title, embed }) {
+  // Establece el ancho y alto del iframe para mantener la proporción 1x1 del juego
+  const paddingTop = '100%'; // Mantener la proporción 1x1
 
   window.coi = {
     shouldRegister: () => !reloadedBySelf,
@@ -10,20 +12,25 @@ function GameIFrame ({ title, embed, h, w }) {
     coepDegrade: () => true,
     doReload: () => window.location.reload(),
     quiet: false
-}
+  }
 
   return (
-    <div>
-      <Iframe
-        frameborder="0"
-        src={embed}
-        title={title}
-        width={h}
-        height={w}
-        allowfullscreen="" 
-      ></Iframe>
+    <div className="card" style={{ maxWidth: '600px', margin: 'auto' }}>
+      <div className="card-body" style={{ padding: 0 }}>
+        <div style={{ position: 'relative', width: '100%', height: 0, paddingBottom: paddingTop }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+            <Iframe
+              frameborder="0"
+              src={embed}
+              title={title}
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+            ></Iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    
   );
 };
 

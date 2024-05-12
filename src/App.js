@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import NavigationBar from './NavigationBar';
 import SimpleCarousel from './SimpleCarousel';
-import ScrollProgressBar from './ScrollProgressBar';
+import ProgressControl from './ProgressControl';
 import CollapsedText from './CollapsedText';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef } from 'react';
@@ -33,8 +32,7 @@ function App() {
             <GameIFrame
               title={"Sediento"}
               embed={"./Sediento/game.html"}
-              h={800}
-              w={600} />
+              maxWidth={600}/>
             <SimpleCarousel />
             <CollapsedText />
           </ParallaxLayer>
@@ -84,7 +82,7 @@ function App() {
       </body>
 
       <footer>
-        <ScrollProgressBar />
+        <ProgressControl/>
       </footer>
     </div>
   );
