@@ -1,8 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import 'holderjs';
 
-import './Carousel.css';
-
 function SimpleCarousel({ img0, img1, img2, t1, t2, t3, d1, d2, d3 }) {
     return (
         <Carousel data-bs-theme="dark">
