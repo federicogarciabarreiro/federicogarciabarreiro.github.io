@@ -9,6 +9,8 @@ import CollapsedText from './CollapsedText';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef } from 'react';
 
+import GameIFrame from './GameIFrame';
+
 function App() {
   const ref = useRef();
 
@@ -25,6 +27,7 @@ function App() {
           </ParallaxLayer>
 
           <ParallaxLayer offset={1} speed={1} factor={1}>
+            <GameIFrame title={"Sediento"} embed={"./Sediento/game.html"} h={800} w={600}/>
             <SimpleCarousel />
             <CollapsedText />
           </ParallaxLayer>
