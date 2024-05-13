@@ -16,8 +16,6 @@ import GameCard from './components/GameCard';
 import CustomSection from './components/CustomSection';
 import CustomParallax from './components/CustomParallax';
 
-import GifAnimationControlledByScroll from './components/GifAnimationControlledByScroll';
-
 function App() {
 
   const [scrollPercentage, setScrollPercentage] = useState(0);
