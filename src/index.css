@@ -28,14 +28,6 @@ footer {
   z-index: 999;
 }
 
-section {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
-
-}
-
 .carousel-image-container {
   overflow: hidden;
 }
@@ -106,11 +98,86 @@ code {
   }
 }
 
-.hidden{
+.Section {
   opacity: 0;
-  transition: all 1s;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+  filter: blur(5px);
 }
 
-.show{
+.Section.Show {
   opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.Section.Hide {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.CustomParallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.Layer1:after,
+.Layer2:after,
+.Layer3:after,
+.Layer4:after,
+.Layer5:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+@media (max-width: 768px) {
+  .CustomParallax {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .CustomParallax {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+  }
+
+  .Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
+    height: 30vh;
+  }
+}
+
+.empty50{
+  height: 50vh;
+}
+
+.empty100{
+  height: 100vh;
 }
