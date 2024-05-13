@@ -28,6 +28,14 @@ footer {
   z-index: 999;
 }
 
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+
+}
+
 .carousel-image-container {
   overflow: hidden;
 }
@@ -36,8 +44,6 @@ footer {
   height: 40vh;
   object-fit: cover;
 }
-
-
 
 .show-navbar {
   transform: translateY(0);
@@ -55,7 +61,6 @@ footer {
   padding-bottom: 56.25%;
   overflow: hidden;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -99,4 +104,13 @@ code {
   to {
     transform: rotate(360deg);
   }
+}
+
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
 }
