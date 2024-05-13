@@ -9,12 +9,14 @@ import ScrollProgressBar from './components/ScrollProgressBar';
 
 import React, { useState } from 'react';
 
-import { sections, images, videos, layers } from './constants';
+import { sections, images, videos, layers, gifs } from './constants';
 
 import GameCard from './components/GameCard';
 
 import CustomSection from './components/CustomSection';
 import CustomParallax from './components/CustomParallax';
+
+import GifAnimationControlledByScroll from './components/GifAnimationControlledByScroll';
 
 function App() {
 
@@ -49,6 +51,10 @@ function App() {
 
       <section id='section-3'/>
         <VideoCardContainer videos={videos} />
+
+      <section id='section-4'/>
+
+
 
       <footer>
         <ScrollProgressBar scrollPercentage={scrollPercentage} />

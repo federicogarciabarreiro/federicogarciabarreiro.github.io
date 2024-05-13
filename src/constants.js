@@ -5,7 +5,8 @@ export const sections = [
   { id: 'section-0', text: 'Sección 0' },
   { id: 'section-1', text: 'Sección 1' },
   { id: 'section-2', text: 'Sección 2' },
-  { id: 'section-3', text: 'Sección 3' }
+  { id: 'section-3', text: 'Sección 3' },
+  { id: 'section-4', text: 'Sección 4' }
 ];
 
 export const images = [
