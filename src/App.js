@@ -12,6 +12,9 @@ import React, { useState } from 'react';
 
 import { sections, images, videos } from './constants';
 
+import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
+
 function App() {
 
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -21,11 +24,13 @@ function App() {
   };
 
   return (
+    <Fade>
     <div className="App">
+    
       <header>
         <NavigationBar sections={sections} />
       </header>
-
+      <Fade cascade damping={0.1}>
       <ScrollProgress onScroll={handleScroll} />
 
         <section id='section-0' />
@@ -36,14 +41,16 @@ function App() {
 
         <section id='section-1' />
         <SimpleCarousel images={images} />
-
+        
         <section id='section-2' />
         <VideoCardContainer videos={videos} />
+        </Fade>
 
       <footer>
            <ScrollProgressBar scrollPercentage={scrollPercentage} />
       </footer>
     </div>
+    </Fade>
   );
 }
 
