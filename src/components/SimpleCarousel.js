@@ -12,9 +12,9 @@ function SimpleCarousel({ images }) {
                         className="d-block w-100"
                         src={image.src}
                         alt={image.title}
-                        style={{ maxHeight: isSmallScreen ? '60vh' : '100vh' }} // Ajusta la altura de la imagen según el tamaño de la pantalla
+                        style={{ maxHeight: isSmallScreen ? '60vh' : '100vh' }}
                     />
-                    <Carousel.Caption className={isSmallScreen ? 'd-none' : ''} style={{ maxHeight: isSmallScreen ? '40vh' : 'unset' }}> {/* Ajusta la altura del Carousel.Caption según el tamaño de la pantalla */}
+                    <Carousel.Caption className={isSmallScreen ? 'd-none' : ''} style={{ maxHeight: isSmallScreen ? '40vh' : 'unset' }}>
                         <h5>{image.title}</h5>
                         <p>{image.description}</p>
                     </Carousel.Caption>
