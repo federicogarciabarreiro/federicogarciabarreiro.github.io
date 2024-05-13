@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavigationBar from './components/NavigationBar';
 import SimpleCarousel from './components/SimpleCarousel';
-import GameIFrame from './components/GameIFrame';
 import VideoCardContainer from './components/VideoCardContainer';
 
 import ScrollProgress from './components/ScrollListener';
@@ -13,7 +12,7 @@ import React, { useState } from 'react';
 import { sections, images, videos } from './constants';
 
 import { Fade } from "react-awesome-reveal";
-import { Slide } from "react-awesome-reveal";
+import GameCard from './components/GameCard';
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
   };
 
   return (
-    <Fade>
     <div className="App">
     
       <header>
@@ -34,10 +32,11 @@ function App() {
       <ScrollProgress onScroll={handleScroll} />
 
         <section id='section-0' />
-        <GameIFrame
-          title={"Sediento"}
-          embed={"./Sediento/game.html"}
-          maxWidth={600} />
+        <GameCard
+    gameTitle={"Sediento"}
+    gameEmbed={"./Sediento/game.html"}
+    maxWidth={600}
+/>
 
         <section id='section-1' />
         <SimpleCarousel images={images} />
@@ -50,7 +49,6 @@ function App() {
            <ScrollProgressBar scrollPercentage={scrollPercentage} />
       </footer>
     </div>
-    </Fade>
   );
 }
 

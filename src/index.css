@@ -28,16 +28,16 @@ footer {
   z-index: 999;
 }
 
-.carouselItem {
-  width: 100%;
-  height: auto;
+.carousel-image-container {
+  overflow: hidden;
 }
 
-.carouselItem img {
-  width: 100%;
-  height: auto;
+.carousel-image-container img {
+  height: 40vh;
   object-fit: cover;
 }
+
+
 
 .show-navbar {
   transform: translateY(0);

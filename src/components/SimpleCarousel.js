@@ -3,24 +3,23 @@ import { Carousel } from 'react-bootstrap';
 
 function SimpleCarousel({ images }) {
     return (
-        <div className="carousel-container">
-            <Carousel data-bs-theme="dark">
-                {images.map((image, index) => (
-                    <Carousel.Item key={index} className='carouselItem'>
+        <Carousel>
+            {images.map((image, index) => (
+                <Carousel.Item key={index}>
+                    <div className="carousel-image-container">
                         <img
                             className="d-block w-100"
                             src={image.src}
                             alt={image.title}
-                            style={{ height: '60vh', objectFit: 'cover' }}
                         />
-                        <Carousel.Caption className>
-                            <h5>{image.title}</h5>
-                            <p>{image.description}</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                ))}
-            </Carousel>
-        </div>
+                    </div>
+                    <Carousel.Caption>
+                        <h5>{image.title}</h5>
+                        <p>{image.description}</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            ))}
+        </Carousel>
     );
 }
 
