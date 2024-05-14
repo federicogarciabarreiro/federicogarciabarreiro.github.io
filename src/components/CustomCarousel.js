@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import CustomSection from './CustomSection';
 
-function SimpleCarousel({ images }) {
+function CustomCarousel({ images }) {
     return (
         <CustomSection children={<Carousel>
             {images.map((image, index) => (
@@ -14,14 +14,16 @@ function SimpleCarousel({ images }) {
                             alt={image.title}
                         />
                     </div>
-                    <Carousel.Caption>
-                        <h5>{image.title}</h5>
-                        <p>{image.description}</p>
-                    </Carousel.Caption>
+                    <div className="carousel-caption-container">
+                        <Carousel.Caption>
+                            <h5 className=''>{image.title}</h5>
+                            <p className=''>{image.description}</p>
+                        </Carousel.Caption>
+                    </div>
                 </Carousel.Item>
             ))}
         </Carousel>} />
     );
 }
 
-export default SimpleCarousel;
+export default CustomCarousel;
