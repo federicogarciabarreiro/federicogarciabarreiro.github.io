@@ -28,34 +28,35 @@ function App() {
     <div className="App">
 
       <header>
-      <NavigationBar sections={sections} />
+        <NavigationBar sections={sections} />
       </header>
       <ScrollProgress onScroll={handleScroll} />
 
-      <section id='section-0'/>
-      <CustomParallax 
-        scrollPercentage={scrollPercentage} 
+      <section id='section-0' />
+      <CustomParallax
+        scrollPercentage={scrollPercentage}
         largeLayers={largeLayers}
         mediumLayers={mediumLayers}
         smallLayers={smallLayers}
       />
 
-      <section id='section-1'/>
-        <CustomSection children={
-           <GameCard
-           gameTitle={"Sediento"}
-           gameEmbed={"./Sediento/game.html"}
-           maxWidth={600}
-         />
-        }/>
 
-      <section id='section-2'/>
-        <SimpleCarousel images={images} />
+      <section id='section-1' />
+      <CustomSection children={
+        <GameCard
+          gameTitle={"Sediento"}
+          gameEmbed={"./Sediento/game.html"}
+          maxWidth={600}
+        />
+      } />
 
-      <section id='section-3'/>
-        <VideoCardContainer videos={videos} />
+      <section id='section-2' />
+      <SimpleCarousel images={images} />
 
-      <section id='section-4'/>
+      <section id='section-3' />
+      <VideoCardContainer videos={videos} />
+
+      <section id='section-4' />
 
 
 

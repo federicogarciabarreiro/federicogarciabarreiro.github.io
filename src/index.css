@@ -127,6 +127,7 @@ code {
   height: 100%;
   background-size: cover;
   background-repeat: repeat-x;
+  mask-image: linear-gradient(to top, transparent 5%, white 15%);
 }
 
 .Layer1:after,
@@ -204,3 +205,5 @@ code {
 .progress-bar-container.visible {
   opacity: 1;
 }
+
+

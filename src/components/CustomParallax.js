@@ -41,7 +41,7 @@ function CustomParallax({ scrollPercentage, largeLayers, mediumLayers, smallLaye
           className={`Layer${index + 1}`}
           style={{
             backgroundImage: `url('${layer.image}')`,
-            backgroundPositionX: `calc(${scrollPercentage * layer.speed}% + ${layer.offset})`
+            backgroundPositionX: `calc(${scrollPercentage * layer.speed}% + ${layer.offset})`,
           }}
         ></div>
       ))}
