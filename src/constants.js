@@ -41,15 +41,15 @@ export const largeLayers = [
 export const mediumLayers = [
   { image: '/pics/Layer4.webp', speed: 0.75, offset: '-0px' },
   { image: '/pics/Layer3.webp', speed: -0.9, offset: '-1500px' },
-  { image: '/pics/Layer2.webp', speed: -1.5, offset: '+80px' },
-  { image: '/pics/Layer1.webp', speed: -0.3, offset: '-1500px' },
-  { image: '/pics/Layer0.webp', speed: 1.5, offset: '-2400px' }
+  { image: '/pics/Layer2.webp', speed: -1.5, offset: '+40px' },
+  { image: '/pics/Layer1.webp', speed: -0.3, offset: '-1700px' },
+  { image: '/pics/Layer0.webp', speed: 1.5, offset: '-2750px' }
 ];
 
 export const smallLayers = [
   { image: '/pics/Layer4.webp', speed: 1, offset: '-0px' },
   { image: '/pics/Layer3.webp', speed: -1.2, offset: '-1500px' },
-  { image: '/pics/Layer2.webp', speed: -2.0, offset: '+160px' },
-  { image: '/pics/Layer1.webp', speed: -0.4, offset: '-2600px' },
-  { image: '/pics/Layer0.webp', speed: 2.0, offset: '-5000px' }
+  { image: '/pics/Layer2.webp', speed: -2.0, offset: '+100px' },
+  { image: '/pics/Layer1.webp', speed: -0.4, offset: '-3100px' },
+  { image: '/pics/Layer0.webp', speed: 2.0, offset: '-4900px' }
 ];
