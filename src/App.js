@@ -9,7 +9,7 @@ import ScrollProgressBar from './components/ScrollProgressBar';
 
 import React, { useState } from 'react';
 
-import { sections, images, videos, layers, gifs } from './constants';
+import { sections, images, videos, largeLayers, mediumLayers, smallLayers } from './constants';
 
 import GameCard from './components/GameCard';
 
@@ -33,7 +33,12 @@ function App() {
       <ScrollProgress onScroll={handleScroll} />
 
       <section id='section-0'/>
-      <CustomParallax scrollPercentage={scrollPercentage} layers={layers} speed={5} />
+      <CustomParallax 
+        scrollPercentage={scrollPercentage} 
+        largeLayers={largeLayers}
+        mediumLayers={mediumLayers}
+        smallLayers={smallLayers}
+      />
 
       <section id='section-1'/>
         <CustomSection children={

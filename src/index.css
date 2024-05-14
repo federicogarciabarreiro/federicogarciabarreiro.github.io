@@ -3,7 +3,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 22px;
   z-index: 999;
 }
 
@@ -14,9 +13,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  padding-top: 45px;
-  padding-bottom: 15px;
 }
 
 footer {
@@ -24,7 +20,6 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 15px;
   z-index: 999;
 }
 
@@ -157,7 +152,7 @@ code {
   }
 
   .Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
-    height: 50vh;
+    height: 50vh; 
   }
 }
 
@@ -174,10 +169,38 @@ code {
   }
 }
 
-.empty50{
-  height: 50vh;
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.empty100{
-  height: 100vh;
+.custom-navbar.visible {
+  transform: translateY(0);
+}
+
+.custom-navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.progress-bar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+.progress-bar-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.progress-bar-container.visible {
+  opacity: 1;
 }

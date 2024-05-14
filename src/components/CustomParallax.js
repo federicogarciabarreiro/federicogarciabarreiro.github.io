@@ -1,9 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function CustomParallax({ scrollPercentage, layers }) {
+function CustomParallax({ scrollPercentage, largeLayers, mediumLayers, smallLayers }) {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const chooseLayersByResolution = () => {
+    if (windowSize.width >= 769) {
+      return largeLayers;
+    } else if (windowSize.width >= 577) {
+      return mediumLayers;
+    } else {
+      return smallLayers;
+    }
+  };
+
+  const chosenLayers = chooseLayersByResolution();
+
   return (
     <div className="CustomParallax">
-      {layers.map((layer, index) => (
+      {chosenLayers.map((layer, index) => (
         <div
           key={index}
           className={`Layer${index + 1}`}
