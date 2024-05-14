@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavigationBar from './components/NavigationBar';
-import CustomCarousel from './components/CustomCarousel';
+import SimpleCarousel from './components/SimpleCarousel';
 import VideoCardContainer from './components/VideoCardContainer';
 
 import ScrollProgress from './components/ScrollListener';
@@ -42,10 +42,6 @@ function App() {
 
 
       <section id='section-1' />
-      <CustomCarousel images={images} />
-
-      <section id='section-2' />
-      
       <CustomSection children={
         <GameCard
           gameTitle={"Sediento"}
@@ -53,6 +49,9 @@ function App() {
           maxWidth={600}
         />
       } />
+
+      <section id='section-2' />
+      <SimpleCarousel images={images} />
 
       <section id='section-3' />
       <VideoCardContainer videos={videos} />
