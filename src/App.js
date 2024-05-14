@@ -15,6 +15,7 @@ import GameCard from './components/GameCard';
 
 import CustomSection from './components/CustomSection';
 import CustomParallax from './components/CustomParallax';
+import BackToTopButton from './components/BackToTopButton';
 
 function App() {
 
@@ -26,11 +27,12 @@ function App() {
 
   return (
     <div className="App">
-
+    <ScrollProgress onScroll={handleScroll} />
+    
       <header>
-        <NavigationBar sections={sections} />
+        {/*<NavigationBar sections={sections} />*/}
       </header>
-      <ScrollProgress onScroll={handleScroll} />
+      
 
       <section id='section-0' />
       <CustomParallax
@@ -39,10 +41,12 @@ function App() {
         mediumLayers={mediumLayers}
         smallLayers={smallLayers}
       />
+      
 
-
+    
+      <VideoCardContainer videos={videos} />
       <section id='section-1' />
-      <CustomCarousel images={images} />
+   
 
       <section id='section-2' />
       
@@ -55,14 +59,15 @@ function App() {
       } />
 
       <section id='section-3' />
-      <VideoCardContainer videos={videos} />
+      
 
       <section id='section-4' />
-
+      <CustomCarousel images={images} />
 
 
       <footer>
-        <ScrollProgressBar scrollPercentage={scrollPercentage} />
+        <BackToTopButton scrollPercentage={scrollPercentage}/>
+        {/*<ScrollProgressBar scrollPercentage={scrollPercentage} />*/}
       </footer>
     </div>
   );

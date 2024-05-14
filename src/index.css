@@ -231,3 +231,27 @@ code {
 .color-white{
   color: white;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}

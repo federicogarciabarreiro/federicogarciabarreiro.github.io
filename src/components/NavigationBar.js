@@ -31,7 +31,7 @@ function NavigationBar({ sections }) {
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark" className={visible ? 'custom-navbar visible' : 'custom-navbar hidden'}>
             <Container>
-                <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+                <Navbar.Brand href="#home">Federico Garcia Barreiro</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
