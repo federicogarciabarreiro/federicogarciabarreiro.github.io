@@ -8,6 +8,7 @@ import { sections, images, videos, largeLayers, mediumLayers, smallLayers } from
 {/*Elementos adicionales.*/}
 import CustomParallax from './components/CustomParallax';
 import CustomNavBar from './components/CustomNavBar';
+import CustomTitleBar from './components/CustomTitleBar';
 import CustomSection from './components/CustomSection';
 import CustomCarousel from './components/CustomCarousel';
 import CustomGameCard from './components/CustomGameCard';
@@ -35,11 +36,13 @@ function App() {
 
     {/*Encabezado*/}
       <header>
-       <CustomNavBar 
+      {/* <CustomNavBar 
         title={"Federico Garcia Barreiro"}
         sections={sections} 
         scrollPercentage={scrollPercentage}
-        />
+        />*/}
+
+        <CustomTitleBar title={"Federico Garcia Barreiro"}></CustomTitleBar>
       </header>
 
     {/*Cuerpo de la aplicacion*/}

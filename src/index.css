@@ -89,13 +89,25 @@ footer {
 
 /*Definimos el diseño de las clases planteadas dentro de la clase CustomNavBar*/
 
+.custom-title-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-title-bar-title {
+  text-align: center;
+  width: 100%;
+}
+
 .custom-navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   transition: transform 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .custom-navbar.visible {
@@ -169,11 +181,6 @@ footer {
 /*Definimos el diseño de las clases planteadas dentro de la clase CustomScrollProgessBar*/
 
 .progress-bar-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
   transition: opacity 0.3s ease;
 }
 
@@ -188,42 +195,33 @@ footer {
 
 /*Definimos el diseño de las clases planteadas dentro de la clase CustomFooterButtons*/
 
-.button-container {
-  position: fixed;
-  bottom: 20px;
-  z-index: 1000;
+.custom-footer-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-social-icon-container {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.button-container.visible {
+.custom-social-icon-container.visible {
   opacity: 1;
 }
 
-.social-media {
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.custom-social-icon {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-.linkedin,
-.itch-io,
-.github {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.custom-button-container {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.linkedin:hover,
-.itch-io:hover,
-.github:hover {
-  background-color: #0056b3;
+.custom-button-container.visible {
+  opacity: 1;
 }
 
 .back-to-top {
@@ -231,17 +229,14 @@ footer {
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .back-to-top:hover {
   background-color: #0056b3;
 }
-
-.back-to-top.visible {
-  opacity: 1;
-}
-

@@ -43,9 +43,6 @@ function CustomNavBar({ title, sections, scrollPercentage }) {
               </Nav.Link>
             ))}
           </Nav>
-          <div className="scroll-percentage">
-            {`Scroll: ${scrollPercentage.toFixed(2)}%`}
-          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

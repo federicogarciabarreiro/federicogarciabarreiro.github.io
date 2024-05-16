@@ -1,7 +1,8 @@
-{/*CustomFooterButtons recibe scrollPercentage.*/}
+{/*CustomFooterButtons recibe scrollPercentage.*/ }
 
 import React, { useState, useEffect } from 'react';
 import CustomButton from './CustomButton';
+import { SocialIcon } from 'react-social-icons';
 
 function CustomFooterButtons({ scrollPercentage }) {
   const [visible, setVisible] = useState(false);
@@ -18,13 +19,13 @@ function CustomFooterButtons({ scrollPercentage }) {
   };
 
   return (
-    <div>
-      <div className={`button-container ${visible ? 'visible' : ''}`}>
-        <div className="social-media">
-          <CustomButton buttonUrl="https://linkedin.com" buttonLabel="LinkedIn" className="linkedin" />
-          <CustomButton buttonUrl="https://itch.io" buttonLabel="itch.io" className="itch-io" />
-          <CustomButton buttonUrl="https://github.com" buttonLabel="GitHub" className="github" />
-        </div>
+    <div className="custom-footer-buttons-container">
+      <div className={`custom-social-icon-container ${visible ? 'visible' : ''}`}>
+        <SocialIcon url="https://www.linkedin.com/in/fedegarbar/" className='custom-social-icon'/>
+        <SocialIcon url="https://fedeegb.itch.io" className='custom-social-icon'/>
+        <SocialIcon url="mailto:federicogarciabarreiro@gmail.com" className='custom-social-icon'/>
+      </div>
+      <div className={`custom-button-container ${visible ? 'visible' : ''}`}>
         <CustomButton
           onClick={scrollToTop}
           buttonLabel="↑"
