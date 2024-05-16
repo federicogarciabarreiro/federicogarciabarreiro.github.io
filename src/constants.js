@@ -21,7 +21,7 @@ export const videos = [
     url: "./Videos/Sparkle.mp4",
     title: "Título del video",
     description: "Descripción del video",
-    buttonComponent: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
   },
   {
     url: "./Videos/Sparkle.mp4",

@@ -1,24 +1,24 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+{/*Elementos necesarios.*/}
+import { useState } from 'react';
+import ScrollListener from './components/ScrollListener';
 
-import NavigationBar from './components/NavigationBar';
-import CustomCarousel from './components/CustomCarousel';
-import VideoCardContainer from './components/VideoCardContainer';
-
-import ScrollProgress from './components/ScrollListener';
-import ScrollProgressBar from './components/ScrollProgressBar';
-
-import React, { useState } from 'react';
-
+{/*Elementos constantes y array de objetos necesarios.*/}
 import { sections, images, videos, largeLayers, mediumLayers, smallLayers } from './constants';
 
-import GameCard from './components/GameCard';
-
-import CustomSection from './components/CustomSection';
+{/*Elementos adicionales.*/}
 import CustomParallax from './components/CustomParallax';
-import BackToTopButton from './components/BackToTopButton';
+import CustomNavBar from './components/CustomNavBar';
+import CustomSection from './components/CustomSection';
+import CustomCarousel from './components/CustomCarousel';
+import CustomGameCard from './components/CustomGameCard';
+import CustomVideoCardContainer from './components/CustomVideoCardContainer';
+import CustomFooterButtons from './components/CustomFooterButtons';
+import CustomScrollProgressBar from './components/CustomScrollProgressBar';
+
 
 function App() {
 
+{/*Definimos el scrollPercentage*/}
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const handleScroll = (percentage) => {
@@ -27,14 +27,24 @@ function App() {
 
   return (
     <div className="App">
-    <ScrollProgress onScroll={handleScroll} />
     
-      <header>
-        {/*<NavigationBar sections={sections} />*/}
-      </header>
-      
+      {/*Inicializamos el componente que lleva el control del porcentaje de scroll*/}
+      <ScrollListener 
+        onScroll={handleScroll} 
+      />
 
-      <section id='section-0' />
+    {/*Encabezado*/}
+      <header>
+       <CustomNavBar 
+        title={"Federico Garcia Barreiro"}
+        sections={sections} 
+        scrollPercentage={scrollPercentage}
+        />
+      </header>
+
+    {/*Cuerpo de la aplicacion*/}
+
+      <section id='section-0'/>
       <CustomParallax
         scrollPercentage={scrollPercentage}
         largeLayers={largeLayers}
@@ -42,33 +52,36 @@ function App() {
         smallLayers={smallLayers}
       />
       
-
-    
-      <VideoCardContainer videos={videos} />
-      <section id='section-1' />
-   
-
-      <section id='section-2' />
+      <section id='section-1'/>
+      <CustomVideoCardContainer 
+        videos={videos}
+      />
       
+      <section id='section-2'/> 
       <CustomSection children={
-        <GameCard
+        <CustomGameCard
           gameTitle={"Sediento"}
           gameEmbed={"./Sediento/game.html"}
+          buttonText={"Clicka!"}
           maxWidth={600}
         />
       } />
 
       <section id='section-3' />
-      
+      <CustomCarousel 
+        images={images}
+      />
 
-      <section id='section-4' />
-      <CustomCarousel images={images} />
-
-
+      {/*Pie de pagina*/}
       <footer>
-        <BackToTopButton scrollPercentage={scrollPercentage}/>
-        {/*<ScrollProgressBar scrollPercentage={scrollPercentage} />*/}
+        <CustomFooterButtons 
+          scrollPercentage={scrollPercentage}
+        />
+        <CustomScrollProgressBar 
+          scrollPercentage={scrollPercentage}
+        />
       </footer>
+
     </div>
   );
 }

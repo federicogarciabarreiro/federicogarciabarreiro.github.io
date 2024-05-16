@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import GameIFrame from './GameIFrame';
+import { useState} from 'react';
+import CustomGameIFrame from './CustomGameIFrame';
 
-function GameCard({ gameTitle, gameEmbed, maxWidth }) {
+{/*CustomGameCard recibe gameTitle, buttonText, gameEmbed y maxWidth.*/}
+
+function CustomGameCard({ gameTitle, buttonText, gameEmbed, maxWidth }) {
     const [isCardOpen, setIsCardOpen] = useState(false);
 
     const handleCardClick = () => {
@@ -14,14 +16,14 @@ function GameCard({ gameTitle, gameEmbed, maxWidth }) {
                 <div className="card text-center" style={{ width: '18rem', margin: '20px', cursor: 'pointer' }} onClick={handleCardClick}>
                     <div className="card-body">
                         <h5 className="card-title">{gameTitle}</h5>
-                        <p className="card-text">Haz clic para jugar</p>
+                        <p className="card-text">{buttonText}</p>
                     </div>
                 </div>
             </div>
             {isCardOpen && (
                 <div className="card" style={{ maxWidth: `${maxWidth}px`, margin: '0 auto', marginTop: '20px' }}>
                     <div className="card-body" style={{ padding: 0 }}>
-                        <GameIFrame title={gameTitle} embed={gameEmbed} />
+                        {<CustomGameIFrame title={gameTitle} embed={gameEmbed} />}
                     </div>
                 </div>
             )}
@@ -29,4 +31,4 @@ function GameCard({ gameTitle, gameEmbed, maxWidth }) {
     );
 }
 
-export default GameCard;
+export default CustomGameCard;

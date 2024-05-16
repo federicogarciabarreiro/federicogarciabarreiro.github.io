@@ -1,8 +1,10 @@
-import React from 'react';
-import VideoCard from './VideoCard';
+{/*CustomVideoCardContainer recibe un array objetos definida en constants.js*/}
+{/*CustomVideoCardContainer permite organizar una serie de videos en una unica fila.*/}
+
+import VideoCard from './CustomVideoCard';
 import CustomSection from './CustomSection';
 
-function VideoCardContainer({ videos }) {
+function CustomVideoCardContainer({ videos }) {
   return (
     <div className="video-card-container container-fluid">
       <div className="row">
@@ -13,7 +15,7 @@ function VideoCardContainer({ videos }) {
               url={video.url}
               title={video.title}
               description={video.description}
-              buttonComponent={video.buttonComponent}
+              component={video.component}
             />}/>
           </div>
         ))}
@@ -22,4 +24,4 @@ function VideoCardContainer({ videos }) {
   );
 }
 
-export default VideoCardContainer;
+export default CustomVideoCardContainer;

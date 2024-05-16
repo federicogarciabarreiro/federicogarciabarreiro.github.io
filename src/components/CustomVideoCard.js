@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactPlayer from 'react-player/lazy';
-import CollapsedText from './CollapsedText';
+{/*CustomVideoCard recibe url, title, description y component.*/}
+{/*CustomVideoCard permite reproducir un video.*/}
 
-function VideoCard({ url, title, description, buttonComponent }) {
+import ReactPlayer from 'react-player/lazy';
+import CollapsedText from './CustomCollapsedText';
+
+function CustomVideoCard({ url, title, description, component }) {
   return (
     <div className="card">
       <div className="card-body d-flex justify-content-center align-items-center flex-column">
@@ -16,11 +18,11 @@ function VideoCard({ url, title, description, buttonComponent }) {
           />
         </div>
         <div className="w-100">
-          <CollapsedText name={title} text={description} maxLines={3} buttonComponent={buttonComponent}/>
+          <CollapsedText name={title} text={description} maxLines={3} component={component}/>
         </div>
       </div>
     </div>
   );
 }
 
-export default VideoCard;
+export default CustomVideoCard;

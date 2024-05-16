@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 
-function BackToTopButton({ scrollPercentage }) {
+{/*CustomFooterButtons recibe scrollPercentage.*/}
+
+function CustomFooterButtons({ scrollPercentage }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    setVisible(scrollPercentage > 25);
+    setVisible(scrollPercentage > 10);
   }, [scrollPercentage]);
 
   const scrollToTop = () => {
@@ -23,4 +25,4 @@ function BackToTopButton({ scrollPercentage }) {
   );
 }
 
-export default BackToTopButton;
+export default CustomFooterButtons;

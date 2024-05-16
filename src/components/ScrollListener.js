@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
+
+{/*ScrollListener permite la escucha y segumiento del valor de desplazamiento del usuario en la web.*/}
 
 const ScrollListener = ({ onScroll }) => {
   const [scrollPercentage, setScrollPercentage] = useState(0);

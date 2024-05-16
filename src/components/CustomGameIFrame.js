@@ -1,7 +1,8 @@
-import React from 'react';
 import Iframe from 'react-iframe';
 
-function GameIFrame({ title, embed }) {
+{/*CustomGameIFrame recibe un title y un embed donde se debera colocar el url de enlace*/}
+
+function CustomGameIFrame({ title, embed }) {
   const paddingTop = '100%';
 
   return (
@@ -24,4 +25,4 @@ function GameIFrame({ title, embed }) {
   );
 };
 
-export default GameIFrame;
+export default CustomGameIFrame;

@@ -1,4 +1,4 @@
-import React from 'react';
+{/*CustomButton recibe un texto y una ruta de enlace*/}
 
 function CustomButton ({ buttonLabel, buttonUrl }) {
   return (
