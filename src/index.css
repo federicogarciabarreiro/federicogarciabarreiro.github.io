@@ -188,11 +188,28 @@ footer {
 
 /*Definimos el diseño de las clases planteadas dentro de la clase CustomFooterButtons*/
 
-.back-to-top {
+.button-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
   z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button-container.visible {
+  opacity: 1;
+}
+
+.social-media {
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkedin,
+.itch-io,
+.github {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -200,8 +217,24 @@ footer {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: opacity 0.3s ease;
-  opacity: 0;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin:hover,
+.itch-io:hover,
+.github:hover {
+  background-color: #0056b3;
+}
+
+.back-to-top {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .back-to-top:hover {
@@ -211,3 +244,4 @@ footer {
 .back-to-top.visible {
   opacity: 1;
 }
+

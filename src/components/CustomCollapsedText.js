@@ -9,6 +9,7 @@ function CustomCollapsedText({title, description, component}) {
         <Accordion.Header>{title}</Accordion.Header>
         <Accordion.Body>
          {description}
+         <hr/>
          {component}
         </Accordion.Body>
       </Accordion.Item>

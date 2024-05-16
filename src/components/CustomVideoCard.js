@@ -18,7 +18,7 @@ function CustomVideoCard({ url, title, description, component }) {
           />
         </div>
         <div className="w-100">
-          <CollapsedText name={title} text={description} maxLines={3} component={component}/>
+          <CollapsedText title={title} description={description} maxLines={3} component={component}/>
         </div>
       </div>
     </div>
