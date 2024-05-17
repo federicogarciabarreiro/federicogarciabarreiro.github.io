@@ -1,5 +1,9 @@
-import React from 'react';
+{/*Elementos adicionales.*/ }
 import CustomButton from './components/CustomButton';
+import CustomSection from './components/CustomSection';
+import CustomCarousel from './components/CustomCarousel';
+import CustomGameCard from './components/CustomGameCard';
+import CustomVideoCardContainer from './components/CustomVideoCardContainer';
 
 export const sections = [
   { id: 'section-0', text: 'Sección 0' },
@@ -52,4 +56,69 @@ export const smallLayers = [
   { image: '/pics/Layer2.webp', speed: -2.0, offset: '+100px' },
   { image: '/pics/Layer1.webp', speed: -0.4, offset: '-3100px' },
   { image: '/pics/Layer0.webp', speed: 2.0, offset: '-4900px' }
+];
+
+export const tabs = [
+  {
+    eventKey: "section-1",
+    title: "Seccion 1",
+    content: (
+      <section id='section-1'>
+        <CustomVideoCardContainer
+          videos={videos}
+        />
+      </section>
+    )
+  },
+  {
+    eventKey: "section-2",
+    title: "Seccion 2",
+    content: (
+      <>
+        <section id='section-1'>
+          <CustomSection children={
+            <CustomGameCard
+              gameTitle={"Sediento"}
+              gameEmbed={"./Sediento/game.html"}
+              buttonText={"Clicka!"}
+              maxWidth={600}
+            />
+          } />
+        </section>
+        <section id='section-2'>
+          <CustomVideoCardContainer
+            videos={videos}
+          />
+        </section>
+      </>
+    )
+  },
+  {
+    eventKey: "section-3",
+    title: "Seccion 3",
+    content: (
+      <>
+        <section id='section-1'>
+          <CustomCarousel
+            images={images}
+          />
+        </section>
+        <section id='section-2'>
+          <CustomSection children={
+            <CustomGameCard
+              gameTitle={"Sediento"}
+              gameEmbed={"./Sediento/game.html"}
+              buttonText={"Clicka!"}
+              maxWidth={600}
+            />
+          } />
+        </section>
+        <section id='section-3'>
+          <CustomVideoCardContainer
+            videos={videos}
+          />
+        </section></>
+    ),
+    disable: true
+  }
 ];
