@@ -1,0 +1,8 @@
+/*Definimos el diseño de las clases planteadas dentro de la clase CustomVideoCard*/
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}

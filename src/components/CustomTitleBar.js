@@ -1,7 +1,9 @@
-{/*CustomTitleBar recibe title, muestra un titulo simple que se oculta al deplazarnos.*/}
-
 import { useState, useEffect } from 'react';
 import { Navbar, Container } from 'react-bootstrap';
+
+import "../styles/CustomTitleBar.css";
+
+{/*CustomTitleBar recibe title, muestra un titulo simple que se oculta al deplazarnos.*/}
 
 function CustomTitleBar({ title }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);

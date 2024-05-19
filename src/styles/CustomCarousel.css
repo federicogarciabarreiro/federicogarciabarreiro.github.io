@@ -1,0 +1,11 @@
+/*Definimos el diseño de las clases planteadas dentro de la clase CustomCarousel*/
+
+.container {
+    overflow: hidden;
+    opacity: 95%;
+  }
+  
+  .container img {
+    height: 40vh;
+    object-fit: cover;
+  }

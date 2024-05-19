@@ -1,0 +1,20 @@
+/*Definimos el diseño de las clases planteadas dentro de la clase CustomSection*/
+
+.Section {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+  filter: blur(5px);
+}
+
+.Section.Show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.Section.Hide {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}

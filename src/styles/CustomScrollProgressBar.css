@@ -1,0 +1,14 @@
+/*Definimos el diseño de las clases planteadas dentro de la clase CustomScrollProgessBar*/
+
+.progress-bar-container {
+    transition: opacity 0.3s ease;
+  }
+  
+  .progress-bar-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .progress-bar-container.visible {
+    opacity: 1;
+  }

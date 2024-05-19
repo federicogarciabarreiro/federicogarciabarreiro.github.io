@@ -12,6 +12,8 @@ import CustomScrollProgressBar from './components/CustomScrollProgressBar';
 import CustomParallax from './components/CustomParallax';
 import CustomTab from './components/CustomTab';
 
+import './App.css';
+
 function App() {
 
   {/*Definimos el scrollPercentage*/}
@@ -37,7 +39,8 @@ function App() {
 
       {/*Cuerpo de la aplicacion*/}      
 
-      <section id='section-0'>
+     <div className='custom-body'>
+     <section id='section-0'>
       <CustomParallax
           scrollPercentage={scrollPercentage}
           largeLayers={largeLayers}
@@ -49,6 +52,7 @@ function App() {
       <CustomTab 
         tabs={tabs}
       />
+     </div>
      
       {/*Pie de pagina*/}
       <footer>

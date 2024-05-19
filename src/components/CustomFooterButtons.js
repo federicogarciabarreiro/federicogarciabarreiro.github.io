@@ -1,8 +1,10 @@
-{/*CustomFooterButtons recibe scrollPercentage.*/ }
-
 import React, { useState, useEffect } from 'react';
 import CustomButton from './CustomButton';
 import { SocialIcon } from 'react-social-icons';
+
+import "../styles/CustomFooterButtons.css";
+
+{/*CustomFooterButtons recibe scrollPercentage.*/ }
 
 function CustomFooterButtons({ scrollPercentage }) {
   const [visible, setVisible] = useState(false);

@@ -1,8 +1,10 @@
-{/*CustomVideoCard recibe url, title, description y component.*/}
-{/*CustomVideoCard permite reproducir un video.*/}
-
 import ReactPlayer from 'react-player/lazy';
 import CollapsedText from './CustomCollapsedText';
+
+import "../styles/CustomVideoCard.css";
+
+{/*CustomVideoCard recibe url, title, description y component.*/}
+{/*CustomVideoCard permite reproducir un video.*/}
 
 function CustomVideoCard({ url, title, description, component }) {
   return (

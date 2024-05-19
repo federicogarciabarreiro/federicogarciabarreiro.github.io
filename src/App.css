@@ -1,0 +1,32 @@
+/*Estilos del Core*/
+
+.App {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.custom-body {
+  background: #eee;
+  padding-bottom: 45px;
+}
+
+body{
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}

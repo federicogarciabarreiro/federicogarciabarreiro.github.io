@@ -1,7 +1,9 @@
-{/*CustomNavBar recibe title, scrollPercentage y sections, un array objetos definida en constants.js*/}
-
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+
+import "../styles/CustomNavBar.css";
+
+{/*CustomNavBar recibe title, scrollPercentage y sections, un array objetos definida en constants.js*/}
 
 function CustomNavBar({ title, sections, scrollPercentage }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);

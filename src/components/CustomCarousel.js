@@ -1,6 +1,8 @@
 import { Carousel } from 'react-bootstrap';
 import CustomSection from './CustomSection';
 
+import "../styles/CustomCarousel.css";
+
 {/*CustomCarousel recibe una array de objetos definida en constants.js, en este caso para obtener src-title-description*/}
 
 function CustomCarousel({ images }) {

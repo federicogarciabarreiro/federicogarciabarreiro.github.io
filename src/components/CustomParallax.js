@@ -1,5 +1,7 @@
 import { useState, useEffect} from 'react';
 
+import "../styles/CustomParallax.css";
+
 {/*CustomParallax recibe scrollPercentage y tres arrays de objetos indicando diferentes offset y velocidades segun corresponda a la resolucion para mejorar la presicion*/}
 
 function CustomParallax({ scrollPercentage, largeLayers, mediumLayers, smallLayers }) {

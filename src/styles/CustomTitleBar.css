@@ -1,0 +1,32 @@
+/*Definimos el diseño de las clases planteadas dentro de la clase CustomTitleBar*/
+
+.custom-title-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-title-bar-title {
+  text-align: center;
+  width: 100%;
+}
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar.visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-navbar.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}

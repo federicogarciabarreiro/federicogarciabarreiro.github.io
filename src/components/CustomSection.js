@@ -1,7 +1,9 @@
+import React, { useState, useRef, useEffect } from 'react';
+
+import "../styles/CustomSection.css";
+
 {/*CustomSection recibe el parametro children, donde ira alojado todo lo que se desee introducir dentro de dicha seccion.*/}
 {/*CustomSection permite ocultar secciones teniendo en cuenta el rango de vision del usuario.*/}
-
-import React, { useState, useRef, useEffect } from 'react';
 
 function CustomSection({ children, forceShow }) {
   const sectionRef = useRef(null);

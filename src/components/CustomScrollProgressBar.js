@@ -1,6 +1,8 @@
-{/*CustomScrollProgressBar recibe scrollPercentage y permite un seguimiento visual del calor de desplazamiento.*/}
-
 import { ProgressBar } from 'react-bootstrap';
+
+import "../styles/CustomScrollProgressBar.css";
+
+{/*CustomScrollProgressBar recibe scrollPercentage y permite un seguimiento visual del calor de desplazamiento.*/}
 
 const CustomScrollProgressBar = ({ scrollPercentage }) => {
     const progressBarClass = scrollPercentage > 10 ? 'visible' : 'hidden';

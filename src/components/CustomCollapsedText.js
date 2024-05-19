@@ -1,5 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 
+import "../styles/CustomCollapsedText.css";
+
 {/*CustomCollapsedText recibe title, description y un component.*/}
 
 function CustomCollapsedText({title, description, component}) {
