@@ -1,11 +1,26 @@
 /*Definimos el diseño de las clases planteadas dentro de la clase CustomCarousel*/
 
-.container {
+.carousel-image-container {
     overflow: hidden;
     opacity: 95%;
   }
   
-  .container img {
+  .carousel-image-container img {
     height: 40vh;
     object-fit: cover;
+  }
+  
+  .carousel-caption {
+    color: black;
+    text-shadow: none;
+  }
+  
+  .carousel-caption h5 {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .carousel-caption p {
+    color: black;
+    font-size: 16px;
   }
