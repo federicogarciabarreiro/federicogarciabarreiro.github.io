@@ -11,12 +11,14 @@ import CustomFooterButtons from './components/CustomFooterButtons';
 import CustomScrollProgressBar from './components/CustomScrollProgressBar';
 import CustomParallax from './components/CustomParallax';
 import CustomTab from './components/CustomTab';
-import CustomGameCard from './components/CustomGameCard';
 
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+{/*Paginas*/}
+import Game from './pages/Game';
+import Home from './pages/Home';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import CustomButton from './components/CustomButton';
 
 function App() {
 
@@ -26,32 +28,6 @@ function App() {
   const handleScroll = (percentage) => {
       setScrollPercentage(percentage);
     };
-
-    function GameButton() {
-      const navigate = useNavigate();
-    
-      return (
-        <div>
-          <CustomButton
-            buttonLabel={"game"}
-            onClick={() => navigate('/game')}
-          />
-        </div>
-      );
-    }
-
-    function HomeButton() {
-      const navigate = useNavigate();
-    
-      return (
-        <div>
-          <CustomButton
-            buttonLabel={"home"}
-            onClick={() => navigate('/')}
-          />
-        </div>
-      );
-    }
 
   return (
     <div className="App">
@@ -80,24 +56,17 @@ function App() {
 
       <Router>
         <Routes>
+
           <Route 
           path={'/'}
-          element={<GameButton/>}
+          element={<Home/>}
             />
-            <Route 
+
+          <Route 
           path={'/game'}
-          element={
-            <>
-            <CustomGameCard
-              gameTitle={"Sediento"}
-              gameEmbed={"./Sediento/game.html"}
-              buttonText={"Clicka!"}
-              maxWidth={600}
+          element={<Game/>}
             />
-            <HomeButton/>
-            </>
-          }
-            />
+            
         </Routes>
       </Router>
 
