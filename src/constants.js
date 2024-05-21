@@ -130,3 +130,59 @@ export const tabs = [
     disable: true
   }
 ];
+
+export const _routes = [
+  {
+      eventKey: "",
+      content: (
+        <section id='section-1'>
+           <CustomSection children={
+              <CustomGameCard
+                gameTitle={"Sediento"}
+                gameEmbed={"./Sediento/game.html"}
+                buttonText={"Clicka!"}
+                maxWidth={600}
+              />
+            } />
+          <CustomVideoCardContainer
+            videos={videos}
+          />
+        </section>
+      )
+    ,
+    eventKey: "home",
+      content: (
+        <section id='section-1'>
+           <CustomSection children={
+              <CustomGameCard
+                gameTitle={"Sediento"}
+                gameEmbed={"./Sediento/game.html"}
+                buttonText={"Clicka!"}
+                maxWidth={600}
+              />
+            } />
+          <CustomVideoCardContainer
+            videos={videos}
+          />
+        </section>
+      )
+    ,
+    eventKey: "game",
+      content: (
+        <section id='section-1'>
+           <CustomSection children={
+              <CustomGameCard
+                gameTitle={"Sediento"}
+                gameEmbed={"./Sediento/game.html"}
+                buttonText={"Clicka!"}
+                maxWidth={600}
+              />
+            } />
+          <CustomVideoCardContainer
+            videos={videos}
+          />
+        </section>
+      )
+    ,
+  }
+];
