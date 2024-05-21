@@ -5755,7 +5755,6 @@ function warnOnce(text) {
  if (!warnOnce.shown) warnOnce.shown = {};
  if (!warnOnce.shown[text]) {
   warnOnce.shown[text] = 1;
-  err(text);
  }
 }
 
@@ -14060,9 +14059,11 @@ const InternalConfig = function (initConfig) { // eslint-disable-line no-unused-
 		 * @ignore
 		 * @type {?function(...*)}
 		 */
-		onPrintError: function (var_args) {
-			console.error.apply(console, Array.from(arguments)); // eslint-disable-line no-console
-		},
+    /**
+		*onPrintError: function (var_args) {
+		*	console.error.apply(console, Array.from(arguments)); // eslint-disable-line no-console
+		*},
+    */
 	};
 
 	/**
