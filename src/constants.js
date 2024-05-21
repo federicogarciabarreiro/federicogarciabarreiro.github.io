@@ -64,6 +64,14 @@ export const tabs = [
     title: "Seccion 1",
     content: (
       <section id='section-1'>
+         <CustomSection children={
+            <CustomGameCard
+              gameTitle={"Sediento"}
+              gameEmbed={"./Sediento/game.html"}
+              buttonText={"Clicka!"}
+              maxWidth={600}
+            />
+          } />
         <CustomVideoCardContainer
           videos={videos}
         />
