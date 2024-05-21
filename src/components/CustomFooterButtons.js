@@ -19,19 +19,19 @@ function CustomFooterButtons({ scrollPercentage }) {
       behavior: 'smooth'
     });
   };
-
+  
   return (
     <div className="custom-footer-buttons-container">
       <div className={`custom-social-icon-container ${visible ? 'visible' : ''}`}>
-        <SocialIcon url="https://www.linkedin.com/in/fedegarbar/" className='custom-social-icon'/>
-        <SocialIcon url="https://fedeegb.itch.io" className='custom-social-icon'/>
-        <SocialIcon url="mailto:federicogarciabarreiro@gmail.com" className='custom-social-icon'/>
+        <SocialIcon url="https://www.linkedin.com/in/fedegarbar/" className={`custom-social-icon ${visible ? 'activate-events' : ''}`}/>
+        <SocialIcon url="https://fedeegb.itch.io" className={`custom-social-icon ${visible ? 'activate-events' : ''}`}/>
+        <SocialIcon url="mailto:federicogarciabarreiro@gmail.com" className={`custom-social-icon ${visible ? 'activate-events' : ''}`}/>
       </div>
       <div className={`custom-button-container ${visible ? 'visible' : ''}`}>
         <CustomButton
           onClick={scrollToTop}
           buttonLabel="↑"
-          className="back-to-top"
+          className={`back-to-top ${visible ? 'activate-events' : ''}`}
         />
       </div>
     </div>

@@ -18,7 +18,6 @@
 .custom-social-icon {
   margin-bottom: 20px;
   margin-left: 20px;
-  pointer-events: all;
 }
 
 .custom-social-icon:hover {
@@ -45,10 +44,13 @@
   transition: background-color 0.3s ease;
   margin-bottom: 20px;
   margin-right: 20px;
-  pointer-events: all;
 }
 
 .back-to-top:hover {
   background-color: #0056b3;
   scale: 1.1;
+}
+
+.activate-events{
+  pointer-events: all;
 }

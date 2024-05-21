@@ -5,10 +5,10 @@
   }
   
   .progress-bar-container.hidden {
-    opacity: 0;
+    opacity: 0.2;
     pointer-events: none;
   }
   
   .progress-bar-container.visible {
-    opacity: 1;
+    opacity: 0.95;
   }
