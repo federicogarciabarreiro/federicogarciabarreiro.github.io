@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import CustomGameCard from '../components/CustomGameCard';
 import CustomButton from '../components/CustomButton';
-
 import "../styles/Game.css";
 
 function HomeButton() {
@@ -20,10 +19,9 @@ function HomeButton() {
   function Game(){
     
     return <div className='game'>
-    <h1>Game</h1>
     <CustomGameCard
       gameTitle={"Sediento"}
-      gameEmbed={"./Sediento/game.html"}
+      gameEmbed={"../games/Sediento/game.html"}
       buttonText={"Clicka!"}
       maxWidth={600}
     />

@@ -1,38 +1,9 @@
 {/*Elementos adicionales.*/ }
 import CustomButton from './components/CustomButton';
-import CustomSection from './components/CustomSection';
-import CustomCarousel from './components/CustomCarousel';
-import CustomGameCard from './components/CustomGameCard';
-import CustomVideoCardContainer from './components/CustomVideoCardContainer';
 
-export const sections = [
-  { id: 'section-0', text: 'Sección 0' },
-  { id: 'section-1', text: 'Sección 1' },
-  { id: 'section-2', text: 'Sección 2' },
-  { id: 'section-3', text: 'Sección 3' },
-  { id: 'section-4', text: 'Sección 4' }
-];
-
-export const images = [
-  { src: "./pics/first-slide.webp", title: "Primera imagen", description: "" },
-  { src: "./pics/second-slide.webp", title: "Segunda imagen", description: "" },
-  { src: "./pics/third-slide.webp", title: "Tercera imagen", description: "" },
-  { src: "./pics/third-slide.webp", title: "Tercera imagen", description: "" }
-];
-
-export const videos = [
-  {
-    url: "./Videos/Sparkle.mp4",
-    title: "Título del video",
-    description: "Descripción del video",
-    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
-  },
-  {
-    url: "./Videos/Sparkle.mp4",
-    title: "Título del video",
-    description: "Descripción del video"
-  }
-];
+{/*Paginas*/ }
+import Home from './pages/Home';
+import Game from './pages/Game';
 
 export const largeLayers = [
   { image: '/pics/Layer4.webp', speed: 0.5, offset: '-0px' },
@@ -58,131 +29,81 @@ export const smallLayers = [
   { image: '/pics/Layer0.webp', speed: 2.0, offset: '-4900px' }
 ];
 
-export const tabs = [
+export const pages = [
   {
-    eventKey: "section-1",
-    title: "Seccion 1",
-    content: (
-      <section id='section-1'>
-         <CustomSection children={
-            <CustomGameCard
-              gameTitle={"Sediento"}
-              gameEmbed={"./Sediento/game.html"}
-              buttonText={"Clicka!"}
-              maxWidth={600}
-            />
-          } />
-        <CustomVideoCardContainer
-          videos={videos}
-        />
-      </section>
-    )
+    key: 0,
+    path: "/",
+    element: <Home />
   },
   {
-    eventKey: "section-2",
-    title: "Seccion 2",
-    content: (
-      <>
-        <section id='section-1'>
-          <CustomSection children={
-            <CustomGameCard
-              gameTitle={"Sediento"}
-              gameEmbed={"./Sediento/game.html"}
-              buttonText={"Clicka!"}
-              maxWidth={600}
-            />
-          } />
-        </section>
-        <section id='section-2'>
-          <CustomVideoCardContainer
-            videos={videos}
-          />
-        </section>
-      </>
-    )
-  },
-  {
-    eventKey: "section-3",
-    title: "Seccion 3",
-    content: (
-      <>
-        <section id='section-1'>
-          <CustomCarousel
-            images={images}
-          />
-        </section>
-        <section id='section-2'>
-          <CustomSection children={
-            <CustomGameCard
-              gameTitle={"Sediento"}
-              gameEmbed={"./Sediento/game.html"}
-              buttonText={"Clicka!"}
-              maxWidth={600}
-            />
-          } />
-        </section>
-        <section id='section-3'>
-          <CustomVideoCardContainer
-            videos={videos}
-          />
-        </section></>
-    ),
-    disable: true
+    key: 1,
+    path: "/game",
+    element: <Game />
   }
 ];
 
-export const _routes = [
+export const sections = [
+  { id: 'section-0', text: 'Sección 0' },
+  { id: 'section-1', text: 'Sección 1' },
+  { id: 'section-2', text: 'Sección 2' },
+  { id: 'section-3', text: 'Sección 3' },
+  { id: 'section-4', text: 'Sección 4' }
+];
+
+export const images_sparkle = [
+  { src: "./pics/sparkle_game_0.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_1.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_2.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_3.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_4.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_5.webp", title: "", description: "" },
+  { src: "./pics/sparkle_game_6.webp", title: "", description: "" }
+];
+
+export const videos_sparkle = [
   {
-      eventKey: "",
-      content: (
-        <section id='section-1'>
-           <CustomSection children={
-              <CustomGameCard
-                gameTitle={"Sediento"}
-                gameEmbed={"./Sediento/game.html"}
-                buttonText={"Clicka!"}
-                maxWidth={600}
-              />
-            } />
-          <CustomVideoCardContainer
-            videos={videos}
-          />
-        </section>
-      )
-    ,
-    eventKey: "home",
-      content: (
-        <section id='section-1'>
-           <CustomSection children={
-              <CustomGameCard
-                gameTitle={"Sediento"}
-                gameEmbed={"./Sediento/game.html"}
-                buttonText={"Clicka!"}
-                maxWidth={600}
-              />
-            } />
-          <CustomVideoCardContainer
-            videos={videos}
-          />
-        </section>
-      )
-    ,
-    eventKey: "game",
-      content: (
-        <section id='section-1'>
-           <CustomSection children={
-              <CustomGameCard
-                gameTitle={"Sediento"}
-                gameEmbed={"./Sediento/game.html"}
-                buttonText={"Clicka!"}
-                maxWidth={600}
-              />
-            } />
-          <CustomVideoCardContainer
-            videos={videos}
-          />
-        </section>
-      )
-    ,
+    url: "./Videos/Sparkle_0.mp4",
+    title: "Sparkle",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+  },
+  {
+    url: "./Videos/Sparkle_1.mp4",
+    title: "Sparkle",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+  }
+];
+
+export const videos_creamyland = [
+  {
+    url: "./Videos/CreamyLand.mp4",
+    title: "Creamy Land",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+  }
+];
+
+export const videos_leveldesign = [
+  {
+    url: "./Videos/LevelDesign_0.mp4",
+    title: "Level Design",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+  },
+  {
+    url: "./Videos/LevelDesign_1.mp4",
+    title: "Level Design",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
+  }
+];
+
+export const videos_switch = [
+  {
+    url: "./Videos/Switch.mp4",
+    title: "Switch",
+    description: "...",
+    component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
   }
 ];

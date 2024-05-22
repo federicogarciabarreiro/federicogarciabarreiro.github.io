@@ -26,3 +26,8 @@ footer {
   z-index: 999;
   pointer-events: none;
 }
+
+.margin-top-bot{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

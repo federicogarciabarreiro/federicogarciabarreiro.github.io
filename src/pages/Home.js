@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import CustomButton from '../components/CustomButton';
-
+import CustomCarousel from '../components/CustomCarousel';
+import CustomVideoCardContainer from "../components/CustomVideoCardContainer";
+import { images_sparkle, videos_sparkle, videos_creamyland, videos_leveldesign, videos_switch } from '../constants';
 import "../styles/Home.css";
 
 function GameButton() {
@@ -19,7 +21,11 @@ function GameButton() {
   function Home(){
     
     return <div className='home'>
-    <h1>Hola</h1>
+    <CustomCarousel images={images_sparkle} />
+    <CustomVideoCardContainer videos={videos_sparkle} />
+    <CustomVideoCardContainer videos={videos_creamyland} />
+    <CustomVideoCardContainer videos={videos_leveldesign} />
+    <CustomVideoCardContainer videos={videos_switch} />
     <GameButton/>
     </div>
   }

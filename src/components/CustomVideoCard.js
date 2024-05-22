@@ -16,6 +16,8 @@ function CustomVideoCard({ url, title, description, component }) {
             controls
             width='100%'
             height='100%'
+            loop
+            muted
             style={{ position: 'absolute', top: 0, left: 0 }}
           />
         </div>
