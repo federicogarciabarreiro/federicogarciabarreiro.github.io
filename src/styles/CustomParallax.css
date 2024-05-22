@@ -3,7 +3,7 @@
 .CustomParallax {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -40,12 +40,12 @@
   .CustomParallax {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
   }
 
   .Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
-    height: 50vh; 
+    height: 40vh; 
   }
 }
 
@@ -53,11 +53,11 @@
   .CustomParallax {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     overflow: hidden;
   }
 
   .Layer1, .Layer2, .Layer3, .Layer4, .Layer5 {
-    height: 30vh;
+    height: 20vh;
   }
 }
