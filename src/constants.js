@@ -62,13 +62,13 @@ export const images_sparkle = [
 
 export const videos_sparkle = [
   {
-    url: "./Videos/Sparkle_0.mp4",
+    url: "./videos/Sparkle_0.mp4",
     title: "Sparkle",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
   },
   {
-    url: "./Videos/Sparkle_1.mp4",
+    url: "./videos/Sparkle_1.mp4",
     title: "Sparkle",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
@@ -77,7 +77,7 @@ export const videos_sparkle = [
 
 export const videos_creamyland = [
   {
-    url: "./Videos/CreamyLand.mp4",
+    url: "./videos/CreamyLand.mp4",
     title: "Creamy Land",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
@@ -86,13 +86,13 @@ export const videos_creamyland = [
 
 export const videos_leveldesign = [
   {
-    url: "./Videos/LevelDesign_0.mp4",
+    url: "./videos/LevelDesign_0.mp4",
     title: "Level Design",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
   },
   {
-    url: "./Videos/LevelDesign_1.mp4",
+    url: "./videos/LevelDesign_1.mp4",
     title: "Level Design",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
@@ -101,7 +101,7 @@ export const videos_leveldesign = [
 
 export const videos_switch = [
   {
-    url: "./Videos/Switch.mp4",
+    url: "./videos/Switch.mp4",
     title: "Switch",
     description: "...",
     component: <CustomButton buttonLabel={"Ver más"} buttonUrl={""} />
