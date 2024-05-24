@@ -2,10 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import "../styles/CustomSection.css";
 
-{/*CustomSection recibe el parametro children, donde ira alojado todo lo que se desee introducir dentro de dicha seccion.*/}
-{/*CustomSection permite ocultar secciones teniendo en cuenta el rango de vision del usuario.*/}
-
-function CustomSection({ children, forceShow }) {
+function CustomSection({ content, forceShow }) {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(forceShow);
 
@@ -35,7 +32,7 @@ function CustomSection({ children, forceShow }) {
       ref={sectionRef}
       className={`Section ${isVisible ? 'Show' : 'Hide'}`}
     >
-      {children}
+      {content}
     </section>
   );
 }

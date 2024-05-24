@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CustomButton from './CustomButton';
+import Button from './base/CustomButton';
 import { SocialIcon } from 'react-social-icons';
 
 import "../styles/CustomFooterButtons.css";
@@ -28,7 +28,7 @@ function CustomFooterButtons({ scrollPercentage }) {
         <SocialIcon url="mailto:federicogarciabarreiro@gmail.com" className={`custom-social-icon ${visible ? 'activate-events' : ''}`}/>
       </div>
       <div className={`custom-button-container ${visible ? 'visible' : ''}`}>
-        <CustomButton
+        <Button
           onClick={scrollToTop}
           buttonLabel="↑"
           className={`back-to-top ${visible ? 'activate-events' : ''}`}

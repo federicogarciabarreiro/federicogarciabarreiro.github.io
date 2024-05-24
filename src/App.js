@@ -3,15 +3,16 @@ import React, { useState } from 'react';
 import ScrollListener from './components/ScrollListener';
 
 {/*Elementos constantes y array de objetos necesarios.*/ }
-import { pages, smallLayers, mediumLayers, largeLayers } from './constants';
+import { pages, parallaxImages} from './constants';
 
 {/*Elementos adicionales.*/ }
-import CustomTitleBar from './components/CustomTitleBar';
 import CustomFooterButtons from './components/CustomFooterButtons';
 import CustomScrollProgressBar from './components/CustomScrollProgressBar';
-import CustomParallax from './components/CustomParallax';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
+import CustomTitleBar from "./components/CustomTitleBar";
+import Parallax from "./components/Parallax";
 
 import './App.css';
 
@@ -26,30 +27,21 @@ function App() {
 
   return (
     <div className="App">
-
-      {/*Inicializamos el componente que lleva el control del porcentaje de scroll*/}
       <ScrollListener
         onScroll={handleScroll}
       />
 
-      {/*Encabezado*/}
       <header>
         <CustomTitleBar title={"Federico Garcia Barreiro"}></CustomTitleBar>
       </header>
 
-      {/*Cuerpo de la aplicacion*/}
-
       <div className='custom-body'>
-        <section id='section-0'>
-          <CustomParallax
-            scrollPercentage={scrollPercentage}
-            largeLayers={largeLayers}
-            mediumLayers={mediumLayers}
-            smallLayers={smallLayers}
-          />
-        </section>
 
-        <BrowserRouter>
+      <Parallax 
+        parallaxImages={parallaxImages}
+        scrollPercentage={scrollPercentage}
+      />
+
       <Routes>
         {pages.map(page => (
           <Route
@@ -59,11 +51,6 @@ function App() {
           />
         ))}
       </Routes>
-    </BrowserRouter>
-
-        {/*<CustomTab 
-        tabs={tabs}
-      />*/}
       </div>
 
       {/*Pie de pagina*/}
@@ -71,6 +58,7 @@ function App() {
         <CustomFooterButtons
           scrollPercentage={scrollPercentage}
         />
+
         <CustomScrollProgressBar
           scrollPercentage={scrollPercentage}
         />

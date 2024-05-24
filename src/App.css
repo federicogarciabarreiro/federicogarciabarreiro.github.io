@@ -36,3 +36,21 @@ footer {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.width-full{
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction:row;
+}

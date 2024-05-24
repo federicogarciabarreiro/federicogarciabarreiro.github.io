@@ -1,0 +1,16 @@
+.card-body {
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.custom-limit-card {
+  max-width: 550px;
+  max-height: 338px;
+}
+
+.colored-card {
+  background-color: aquamarine;
+}
