@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import About from '../components/About.astro';
 import Projects from '../components/Projects.astro';
 import Skills from '../components/Skills.astro';
+import Layout from '../layouts/Layout.astro';
+import {Button} from '@nextui-org/react';
 
 ---
 
@@ -17,6 +19,11 @@ import Skills from '../components/Skills.astro';
   <body class="bg-gray-50">
     <Navbar />
     <main class="pt-16">
+      <Layout title="Welcome to Astro.">
+        <main>
+            <Button color="primary" client:visible>My button</Button>
+        </main>
+      </Layout>
       <About />
       <Projects />
       <Skills />
