@@ -1,0 +1,20 @@
+---
+const navLinks = [
+  { href: '#about', label: 'Sobre Mí' },
+  { href: '#projects', label: 'Proyectos' },
+  { href: '#skills', label: 'Habilidades' },
+];
+---
+
+<nav class="bg-gray-800 text-white fixed w-full top-0 z-50 shadow-lg">
+  <div class="container mx-auto px-4 flex justify-between items-center h-16">
+    <div class="text-2xl font-bold">
+      <a href="#">MiPortafolio</a>
+    </div>
+    <ul class="flex space-x-4">
+      {navLinks.map(link => (
+        <li><a href={link.href} class="hover:text-gray-300">{link.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,11 @@
+---
+export const images = [];
+---
+
+<div class="relative overflow-hidden rounded-lg">
+  <div class="flex transition-transform ease-in-out duration-500">
+    {images.map(image => (
+      <img src={image} alt="" class="w-full h-64 object-cover" />
+    ))}
+  </div>
+</div>
