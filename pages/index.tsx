@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-
+import {Slider} from "@nextui-org/slider";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
@@ -23,7 +23,14 @@ export default function IndexPage() {
             Beautiful, fast and modern React UI library.
           </h4>
         </div>
-
+        <Slider 
+      label="Temperature" 
+      step={0.01} 
+      maxValue={1} 
+      minValue={0} 
+      defaultValue={0.4}
+      className="max-w-md"
+    />
         <div className="flex gap-3">
           <Link
             isExternal
