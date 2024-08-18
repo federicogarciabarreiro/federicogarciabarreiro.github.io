@@ -21,10 +21,22 @@ export const siteConfig = {
       href: "/contact",
     }
   ],
-  navMenuItems: [
+  navMenuItems:  [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Sobre mi",
+      href: "/about",
+    },
+    {
+      label: "Estudios",
+      href: "/studies",
+    },
+    {
+      label: "Trabajos",
+      href: "/jobs",
+    },
+    {
+      label: "Contacto",
+      href: "/contact",
     }
   ],
   links: {

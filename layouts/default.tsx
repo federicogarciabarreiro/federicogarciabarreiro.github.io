@@ -17,7 +17,7 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-       <p>&copy; 2024 Federico Garcia Barreiro. Todos los derechos reservados.</p>
+       <p>&copy; 2024 Federico Garcia Barreiro.</p>
       </footer>
     </div>
   );

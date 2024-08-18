@@ -2,7 +2,6 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-import {Slider} from "@nextui-org/slider";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
@@ -14,7 +13,7 @@ export default function IndexPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Mi&nbsp;</h1>
-          <h1 className={title({ color: "violet" })}>porfolio&nbsp;</h1>
+          <h1 className={title({ color: "primary" })}>porfolio&nbsp;</h1>
           <br />
           <h1 className={title()}>
             personal.
@@ -24,17 +23,6 @@ export default function IndexPage() {
           </h4>
         </div>
         <div className="flex gap-3">
-          <Link
-            isExternal
-            className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
-            })}
-            href={siteConfig.links.github}
-          >
-            GitHub  
-          </Link>
           <Link
             isExternal
             className={buttonStyles({ variant: "bordered", radius: "full" })}
@@ -49,7 +37,7 @@ export default function IndexPage() {
           <Snippet hideCopyButton hideSymbol variant="bordered">
             <span>
               Mi sitio web es: {" "}
-              <Code color="primary">https://federicogarciabarreiro.github.io/porfolio</Code>
+              <Code color="primary">www</Code>
             </span>
           </Snippet>
         </div>
