@@ -6,19 +6,19 @@ export const siteConfig = {
   navItems: [
     {
       label: "Sobre mi",
-      href: "/projects",
+      href: "/about",
     },
     {
       label: "Estudios",
-      href: "/contact",
+      href: "/about",
     },
     {
       label: "Trabajos",
-      href: "/jobs",
+      href: "/about",
     },
     {
       label: "Contacto",
-      href: "/contact",
+      href: "/about",
     }
   ],
   navMenuItems:  [
@@ -28,15 +28,15 @@ export const siteConfig = {
     },
     {
       label: "Estudios",
-      href: "/studies",
+      href: "/about",
     },
     {
       label: "Trabajos",
-      href: "/jobs",
+      href: "/about",
     },
     {
       label: "Contacto",
-      href: "/contact",
+      href: "/about",
     }
   ],
   links: {
