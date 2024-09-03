@@ -65,7 +65,7 @@ export const Form = () => {
   };
 
   if (error) {
-    toast("Email has not been sent", {
+    toast("El correo no se ha enviado.", {
       className: "my-classname",
       duration: 3000,
       icon: <CircleXSVG />,
@@ -73,7 +73,7 @@ export const Form = () => {
   }
 
   if (submitted) {
-    toast("Email has been sent", {
+    toast("Correo enviado correctamente.", {
       className: "my-classname",
       duration: 3000,
       icon: <CircleCheckSVG />,
@@ -85,43 +85,43 @@ export const Form = () => {
       className="flex flex-col gap-4"
       onSubmit={(e) => handleSubmit(e)}
     >
-      <h2 className="text-3xl font-bold">Contact with me</h2>
+      <h2 className="text-3xl font-bold">¡Contactame!</h2>
       <p className="text-lg text-gray-400">
-        You can also get in touch with me through this form below.
+        Si estas interesado en escribirme puedes hacerlo en el siguiente panel.
       </p>
       <Input
         id="name"
         type="text"
-        label="Name"
-        placeholder="John Doe"
+        label="Nombre"
+        placeholder="Mi nombre"
         isInvalid={isInvalidName}
         value={name}
         onChange={(e) => setName(e.target.value)}
-        errorMessage={isInvalidName && "Please enter your name"}
+        errorMessage={isInvalidName && "Ingresa tu nombre."}
       />
       <Input
         type="email"
         name="email"
         id="email"
-        label="Email"
-        placeholder="john.doe@example.com"
+        label="Correo electronico"
+        placeholder="minombre@ejemplo.com"
         isInvalid={isInvalidEmail}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        errorMessage={isInvalidEmail && "Please enter a valid email"}
+        errorMessage={isInvalidEmail && "Ingrese un correo electronico valido."}
       />
       <Textarea
         id="message"
         type="text"
-        label="Message"
-        placeholder="Enter your message here"
+        label="Mensaje"
+        placeholder="Escribe aqui..."
         minRows={4}
         isInvalid={isInvalidMessage}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        errorMessage={isInvalidMessage && "Please enter your message"}
+        errorMessage={isInvalidMessage && "Escribe tu mensaje."}
       />
-      <Button type="submit">Send Message</Button>
+      <Button type="submit">Enviar</Button>
 
       <Toaster theme="dark" />
     </form>
