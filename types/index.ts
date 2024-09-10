@@ -1,5 +1,4 @@
-import { SVGProps } from "react";
-
-export type IconSvgProps = SVGProps<SVGSVGElement> & {
-  size?: number;
-};
+export * from "./education";
+export * from "./iconT";
+export * from "./project";
+export * from "./contactData";

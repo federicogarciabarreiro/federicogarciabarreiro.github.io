@@ -10,11 +10,11 @@ export const siteConfig = {
     },
     {
       label: "Estudios",
-      href: "/about",
+      href: "/studies",
     },
     {
       label: "Trabajos",
-      href: "/about",
+      href: "/projects",
     },
     {
       label: "Contacto",
@@ -28,11 +28,11 @@ export const siteConfig = {
     },
     {
       label: "Estudios",
-      href: "/about",
+      href: "/studies",
     },
     {
       label: "Trabajos",
-      href: "/about",
+      href: "/projects",
     },
     {
       label: "Contacto",

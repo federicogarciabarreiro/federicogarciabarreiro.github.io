@@ -1,9 +1,9 @@
 import { whoAmIDataType } from "../_types/whoAmIData";
 
 export const whoAmIData: whoAmIDataType = {
-  fullName: "Leo Miranda",
-  profession: "Frontend developer",
+  fullName: "Federico Garcia Barreiro",
+  profession: "Unity 3D Developer - DAM+DAW",
   whoAmI:
-    "Hello! I am a developer who really enjoys transforming ideas into functional software that exceeds expectations. I like to be constantly learning from other professionals, teams and communities to stay on top of the latest industry trends. Being a developer is not just a job for me; it is an activity that I absolutely appreciate all the time.",
-  quote: "I really like creating software solutions",
+    "Soy un desarrollador apasionado por la programación y la creación de juegos en Unity. El desarrollo me inspira profundamente, y cada proyecto es una oportunidad para mejorar y aprender algo nuevo.",
+  quote: "El desarrollo de software es mucho más que una profesión; es una pasión que disfruto cada día.",
 };
