@@ -1,4 +1,4 @@
-import { educationType } from "../_types";
+import { educationType } from "../types";
 
 export const Education = ({ career, years, description }: educationType) => {
   return (

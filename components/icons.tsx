@@ -1,8 +1,7 @@
 import * as React from "react";
 
-import { IconSvgProps } from "@/types";
-
 import { useTheme } from "next-themes";
+import { IconSvgProps } from "@/types/IconSVGProps";
 
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,

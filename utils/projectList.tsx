@@ -1,11 +1,4 @@
-import {
-  ExpressSVG,
-  JavascriptSVG,
-  MongoDBSVG,
-  MongooseSVG,
-  SwaggerSVG,
-  TypescriptSVG,
-} from "../components/ui/icons";
+import { ExpressSVG, MongoDBSVG, MongooseSVG, SwaggerSVG, TypescriptSVG } from "@/components/ui/icons";
 import { ProjectType } from "../types";
 
 export const ProjectList: ProjectType[] = [
@@ -17,24 +10,6 @@ export const ProjectList: ProjectType[] = [
     title: "Shop API",
     subtitle: "E-commerse back-end",
     technologies: [
-      {
-        name: "JavaScript",
-        icon: (
-          <JavascriptSVG
-            color="#F7DF1E"
-            size={16}
-          />
-        ),
-      },
-      {
-        name: "TypeScript",
-        icon: (
-          <TypescriptSVG
-            color="#3178C6"
-            size={16}
-          />
-        ),
-      },
       {
         name: "Express",
         icon: (
