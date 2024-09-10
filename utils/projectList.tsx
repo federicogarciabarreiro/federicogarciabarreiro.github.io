@@ -3,7 +3,6 @@ import {
   JavascriptSVG,
   MongoDBSVG,
   MongooseSVG,
-  ShopApiSVG,
   SwaggerSVG,
   TypescriptSVG,
 } from "../components/ui/icons";
@@ -11,7 +10,10 @@ import { ProjectType } from "../types";
 
 export const ProjectList: ProjectType[] = [
   {
-    icon: <ShopApiSVG />,
+    icon:  <TypescriptSVG
+    color="#3178C6"
+    size={16}
+  />,
     title: "Shop API",
     subtitle: "E-commerse back-end",
     technologies: [
