@@ -95,7 +95,7 @@ export const Project = (project: ProjectType) => {
           <CardBody className="justify-center items-center">
             {!websiteUrl ? (
               <h2 className="font-bold text-xl text-gray-400 text-center">
-                Coming Soon!
+                En produccion...
               </h2>
             ) : (
               <LinkSVG />

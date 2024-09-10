@@ -1,6 +1,6 @@
 import { ProjectList } from "../../utils";
 import { ProjectType } from "../../types";
-import { Project } from "../../_components/Project"
+import { Project } from "../../components/Project"
 
 export default function Projects() {
   return (

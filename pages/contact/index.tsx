@@ -7,8 +7,8 @@ import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 
 import { contactData } from "../../utils"
-import { Form } from "../../_components/Form";
-import { MailSVG, GithubSVG, LinkedInSVG } from "../../_components/ui/icons/";
+import { Form } from "../../components/Form";
+import { MailSVG, GithubSVG, LinkedInSVG } from "../../components/ui/icons";
 import contactAnimation from "../../utils/contactSectionAnimations";
 
 export default function ContactPage() {
