@@ -1,4 +1,4 @@
-import { whoAmIDataType } from "../_types/whoAmIData";
+import { whoAmIDataType } from "../types/whoAmIData";
 
 export const whoAmIData: whoAmIDataType = {
   fullName: "Federico Garcia Barreiro",

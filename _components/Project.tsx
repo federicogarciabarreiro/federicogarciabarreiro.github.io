@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Card, CardBody } from "@nextui-org/card";
 import { Chip } from "@nextui-org/chip";
 
-import { TechnologyType, ProjectType } from "../_types";
+import { TechnologyType, ProjectType } from "../types";
 import { GithubSVG, LinkSVG } from "./ui/icons";
-import ProjectsSectionAnimations from "../_utils/ProjectsSectionAnimations";
+import ProjectsSectionAnimations from "../utils/ProjectsSectionAnimations";
 
 export const Project = (project: ProjectType) => {
   const {

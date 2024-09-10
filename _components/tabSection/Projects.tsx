@@ -1,4 +1,4 @@
-import { ProjectList } from "../../_utils";
+import { ProjectList } from "../../utils";
 import { ProjectType } from "../../_types";
 import { Project } from "../Project";
 

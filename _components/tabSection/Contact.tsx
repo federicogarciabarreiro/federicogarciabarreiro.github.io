@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 
-import { contactData } from "../../_utils";
+import { contactData } from "../../utils";
 import { Form } from "../Form";
 import { GithubSVG, LinkedInSVG, MailSVG } from "../ui/icons";
-import contactAnimation from "../../_utils/contactSectionAnimations";
+import contactAnimation from "../../utils/contactSectionAnimations";
 
 export const Contact = () => {
   const { email, github, linkedIn } = contactData;

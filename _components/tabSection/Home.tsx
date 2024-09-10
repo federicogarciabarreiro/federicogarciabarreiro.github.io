@@ -9,8 +9,8 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 import { Education } from "../Education";
 import { iconType, educationType } from "../../_types";
-import { educationList, techonologyIconList, whoAmIData } from "../../_utils";
-import aboutAnimation from "../../_utils/aboutSectionAnimations";
+import { educationList, techonologyIconList, whoAmIData } from "../../utils";
+import aboutAnimation from "../../utils/aboutSectionAnimations";
 
 // eslint-disable-next-line react/display-name
 const IconComponent = forwardRef<HTMLDivElement, { icon: any }>(

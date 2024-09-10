@@ -1,4 +1,4 @@
-import { contactDataType } from "../_types";
+import { contactDataType } from "../types";
 
 export const contactData: contactDataType = {
   email: "federicogarciabarreiro@gmail.com",

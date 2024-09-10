@@ -6,14 +6,14 @@ import Link from "next/link";
 import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 
-import { contactData } from "../../_utils"
+import { contactData } from "../../utils"
 import { Form } from "../../_components/Form";
-import { MailSVG, GithubSVG, XSVG, LinkedInSVG } from "../../_components/ui/icons/";
-import contactAnimation from "../../_utils/contactSectionAnimations";
+import { MailSVG, GithubSVG, LinkedInSVG } from "../../_components/ui/icons/";
+import contactAnimation from "../../utils/contactSectionAnimations";
 
 export default function ContactPage() {
 
-  const { email, github, x, linkedIn } = contactData;
+  const { email, github, linkedIn } = contactData;
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
