@@ -5,6 +5,10 @@ export const siteConfig = {
   description: "",
   navItems: [
     {
+      label: "Sobre mi",
+      href: "/",
+    },
+    {
       label: "Proyectos",
       href: "/projects",
     },
@@ -14,6 +18,10 @@ export const siteConfig = {
     }
   ],
   navMenuItems:  [
+    {
+      label: "Sobre mi",
+      href: "/",
+    },
     {
       label: "Proyectos",
       href: "/projects",

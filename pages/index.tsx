@@ -37,14 +37,13 @@ export default function About() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>Sobre mi</h1>
+        <div className="inline-block max-w-7xl text-center justify-center">
           <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">
             <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
               <CardBody className="flex-col items-center justify-center gap-2">
                 <Avatar
                   name="LM"
-                  src="https://res.cloudinary.com/dbzv9xfjp/image/upload/v1700603685/portfolio/avatar-profile_lb9hd9.jpg"
+                  src="/me.jpeg"
                   className="w-24 h-24 text-large brightness-90"
                 />
                 <h1 className="text-4xl font-bold">{fullName}</h1>
