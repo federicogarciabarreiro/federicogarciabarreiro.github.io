@@ -3,8 +3,8 @@ import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { SwitchProps, useSwitch } from "@nextui-org/switch";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
-
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { useIconColor } from "./useIconColor";
 
 export interface ThemeSwitchProps {
   className?: string;
@@ -16,11 +16,13 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   classNames,
 }) => {
   const [isMounted, setIsMounted] = useState(false);
-
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  
+  const iconColor = useIconColor();
 
   const onChange = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    const newTheme = resolvedTheme === "light" ? "dark" : "light";
+    setTheme(newTheme);
   };
 
   const {
@@ -31,13 +33,23 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     getInputProps,
     getWrapperProps,
   } = useSwitch({
-    isSelected: theme === "light",
+    isSelected: resolvedTheme === "dark",
     onChange,
   });
 
   useEffect(() => {
     setIsMounted(true);
-  }, [isMounted]);
+  }, []);
+
+  useEffect(() => {
+    console.log("Resolved Theme:", resolvedTheme);
+  }, [resolvedTheme]);
+
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
 
   if (!isMounted) return <div className="w-6 h-6" />;
 
@@ -50,7 +62,11 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           classNames?.base,
         ),
       })}
-    >
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "scale(1)" : "scale(0.9)",
+        transition: "opacity 0.5s ease, transform 0.5s ease"
+      }}>
       <VisuallyHidden>
         <input {...getInputProps()} />
       </VisuallyHidden>
@@ -74,9 +90,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {isSelected ? (
-          <MoonFilledIcon size={22} />
+          <MoonFilledIcon size={22} color={iconColor} />
         ) : (
-          <SunFilledIcon size={22} />
+          <SunFilledIcon size={22} color={iconColor} />
         )}
       </div>
     </Component>

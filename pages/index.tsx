@@ -1,5 +1,5 @@
 "use client";
-import { title } from "@/components/primitives";
+
 import DefaultLayout from "@/layouts/default";
 import { useEffect } from "react";
 import Image from "next/image";
@@ -38,7 +38,9 @@ export default function About() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-7xl text-center justify-center">
-          <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">
+          {/*Esta dando problemas definir el maximo de filas por columna en varias secciones.*/}
+          {/*<div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">*/}
+          <div className="grid grid-cols-4 lg:grid-cols-3 gap-5">
             <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
               <CardBody className="flex-col items-center justify-center gap-2">
                 <Avatar
@@ -87,8 +89,10 @@ export default function About() {
                       key={`technology-item-${name}`}
                       content={name}
                     >
+                      <div>
                       <IconComponent icon={icon} />
                       <Chip variant="flat">{name}</Chip>
+                      </div>
                     </Tooltip>
                   ))}
                 </div>

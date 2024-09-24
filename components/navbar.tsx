@@ -24,8 +24,13 @@ import {
   LinkedinIcon,
   InstagramIcon,
 } from "@/components/icons";
+import { useTheme } from "next-themes";
 
 export const Navbar = () => {
+
+  const { resolvedTheme } = useTheme();
+  const iconColor = resolvedTheme === "light" ? "black" : "white";
+
   const searchInput = (
     <Input
       aria-label="Buscar"
@@ -81,25 +86,25 @@ export const Navbar = () => {
         <NavbarItem className="hidden sm:flex gap-2">
 
           <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-default-500" color={iconColor} />
           </Link>
           <Link isExternal href={siteConfig.links.instagram}>
-            <InstagramIcon className="text-default-500" />
+            <InstagramIcon className="text-default-500" color={iconColor} />
           </Link>
           <Link isExternal href={siteConfig.links.linkedin}>
-            <LinkedinIcon className="text-default-500" />
+            <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
 
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        {/*<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>*/}
         <NavbarItem className="hidden md:flex">
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="text-default-500" color={iconColor} />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
