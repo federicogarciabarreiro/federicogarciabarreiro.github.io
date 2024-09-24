@@ -59,7 +59,9 @@ export const Project = (project: ProjectType) => {
         <CardBody className="text-gray-400 text-lg flex justify-between gap-4">
           <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
-            {title}
+            <h2 className="font-bold text-3xl text-gray-400 text-center">
+                {title}
+              </h2>
           </div>
           {description}
           <div className=" flex flex-wrap gap-2">

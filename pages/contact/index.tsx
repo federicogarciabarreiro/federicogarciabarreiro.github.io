@@ -76,7 +76,7 @@ export default function ContactPage() {
                   <CardBody className="flex justify-center items-center gap-2">
                     <GithubSVG />
                     <h1 className="text-1xl font-bold">@federicogarciabarreiro</h1>
-                    <p className="text-0.5xl text-gray-400  text-center">
+                    <p className="text-0.5xl font-bold text-center">
                       Aqui puedes encontrar todos mis repositorios...
                     </p>
                   </CardBody>

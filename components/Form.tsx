@@ -86,7 +86,7 @@ export const Form = () => {
       onSubmit={(e) => handleSubmit(e)}
     >
       <h2 className="text-3xl font-bold">¡Contactame!</h2>
-      <p className="text-lg text-gray-400">
+      <p className="text-0.5xl font-bold text-center">
         Si estas interesado en escribirme puedes hacerlo en el siguiente panel.
       </p>
       <Input
