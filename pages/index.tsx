@@ -38,10 +38,8 @@ export default function About() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-7xl text-center justify-center">
-          {/*Esta dando problemas definir el maximo de filas por columna en varias secciones.*/}
-          {/*<div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">*/}
           <div className="grid grid-cols-4 lg:grid-cols-3 gap-5">
-            <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
+            <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1 !bg-opacity-75 shadow-none">
               <CardBody className="flex-col items-center justify-center gap-2">
                 <Avatar
                   name="LM"
@@ -49,19 +47,19 @@ export default function About() {
                   className="w-24 h-24 text-large brightness-90"
                 />
                 <h1 className="text-4xl font-bold">{fullName}</h1>
-
+                <hr/>
                 <Button>Download CV</Button>
               </CardBody>
             </Card>
 
-            <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-2  opacity-0 mobile-animation whoAmICard">
+            <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-2 opacity-0 mobile-animation whoAmICard !bg-opacity-90 shadow-none">
               <CardBody className="gap-2">
                 <div className="text-3xl font-bold">¿Quien soy?</div>
                 <div className="text-lg text-gray-400">{whoAmI} </div>
               </CardBody>
             </Card>
 
-            <Card className="col-span-full row-start-2 row-end-3 lg:row-start-2 lg:col-start-1 lg:col-span-1 bg-blue opacity-0 mobile-animation professionCard">
+            <Card className="col-span-full row-start-2 row-end-3 lg:row-start-2 lg:col-start-1 lg:col-span-1 bg-blue opacity-0 mobile-animation professionCard !bg-opacity-90 shadow-none">
               <CardBody className="justify-center items-center">
                 <h2 className="text-2xl lg:text-3xl font-bold  text-center">
                   {profession}
@@ -69,7 +67,7 @@ export default function About() {
               </CardBody>
             </Card>
 
-            <Card className="hidden lg:flex col-span-2 lg:row-start-3 lg:row-span-1 lg:col-start-3 lg:col-span-1 bg-blue opacity-0 mobile-animation quoteCard">
+            <Card className="hidden lg:flex col-span-2 lg:row-start-3 lg:row-span-1 lg:col-start-3 lg:col-span-1 bg-blue opacity-0 mobile-animation quoteCard !bg-opacity-90 shadow-none">
               <CardBody className="justify-center items-center lg:row-start-2 lg:cols-start-4">
                 <div className="text-3xl font-bold text-center">
                   &#34;{quote}&#34;

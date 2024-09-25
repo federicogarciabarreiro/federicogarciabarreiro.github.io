@@ -34,14 +34,14 @@ export const Project = (project: ProjectType) => {
 
   return (
     <div className="grid grid-cols-4 gap-5 pb-4 overflow-hidden">
-      <div className="flex lg:hidden items-center col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
+      <div className="flex lg:hidden items-center col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold opacity-0 mobile-animation titleSection">
         <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>
         {title}
       </div>
 
       <div className="col-span-full lg:row-start-1 lg:row-end-4 lg:col-start-1 lg:col-end-3 opacity-0 mobile-animation videoSection">
         <video
-          className="rounded-xl  border-1 border-[#212121]"
+          className="rounded-xl  border-4 border-[#FFFFFF]"
           style={{
             width: "100%",
             height: "100%",
@@ -55,11 +55,11 @@ export const Project = (project: ProjectType) => {
         ></video>
       </div>
 
-      <Card className="col-span-full lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 lg:min-h-[250px] opacity-0 mobile-animation descriptionCard">
-        <CardBody className="text-gray-400 text-lg flex justify-between gap-4">
+      <Card className="col-span-full lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 lg:min-h-[250px] opacity-0 mobile-animation descriptionCard !bg-opacity-75 shadow-none">
+        <CardBody className="text-lg flex justify-between gap-4">
           <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
-            <h2 className="font-bold text-3xl text-gray-400 text-center">
+            <h2 className="font-bold text-3xl text-center">
                 {title}
               </h2>
           </div>
@@ -86,7 +86,7 @@ export const Project = (project: ProjectType) => {
         isHoverable
         className={`${
           websiteUrl === "NONE" && "hidden"
-        } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard`}
+        } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard !bg-opacity-75 shadow-none`}
       >
         <Link
           href={websiteUrl}
@@ -96,7 +96,7 @@ export const Project = (project: ProjectType) => {
         >
           <CardBody className="justify-center items-center">
             {!websiteUrl ? (
-              <h2 className="font-bold text-xl text-gray-400 text-center">
+              <h2 className="font-bold text-xl text-center">
                 En produccion...
               </h2>
             ) : (
@@ -112,7 +112,7 @@ export const Project = (project: ProjectType) => {
           websiteUrl === "NONE"
             ? "lg:col-start-3 col-span-4"
             : "lg:col-start-4 col-span-2"
-        }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard`}
+        }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard !bg-opacity-75 shadow-none`}
       >
         <Link
           href={githubUrl}

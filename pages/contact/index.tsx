@@ -32,7 +32,7 @@ export default function ContactPage() {
 
           <section className="p-4 pb-12 max-w-6xl m-auto overflow-hidden 2xl:overflow-visible">
             <div className="grid grid-rows-2 grid-cols-2 gap-5 max-w-2xl mx-auto">
-              <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-1 opacity-0 mobile-animation emailCard">
+              <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-1 opacity-0 mobile-animation emailCard !bg-opacity-75 shadow-none">
                 <CardBody className="flex flex-row justify-center items-center gap-2">
                   <Button
                    
@@ -45,7 +45,7 @@ export default function ContactPage() {
 
               <Card
                 isHoverable
-                className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard"
+                className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard !bg-opacity-75 shadow-none"
               >
                 <Link
                   href={linkedIn}
@@ -65,7 +65,7 @@ export default function ContactPage() {
 
               <Card
                 isHoverable
-                className="col-span-full lg:row-start-1 lg:row-span-2 lg:col-start-2 cursor-pointer opacity-0 mobile-animation githubCard "
+                className="col-span-full lg:row-start-1 lg:row-span-2 lg:col-start-2 cursor-pointer opacity-0 mobile-animation githubCard !bg-opacity-75 shadow-none"
               >
                 <Link
                   href={github}

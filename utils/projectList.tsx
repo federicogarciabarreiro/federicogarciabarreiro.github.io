@@ -4,7 +4,7 @@ import { ProjectType } from "../types";
 export const ProjectList: ProjectType[] = [
   {
     icon:  <UnitySVG
-    color="#47A248"
+    color="#FFFFFF"
     size={16}
   />,
     title: "Porfolio",
@@ -48,7 +48,7 @@ export const ProjectList: ProjectType[] = [
   },
   {
     icon:  <UnitySVG
-    color="#47A248"
+    color="#FFFFFF"
     size={16}
   />,
     title: "Sediento",
@@ -92,7 +92,7 @@ export const ProjectList: ProjectType[] = [
   },
   {
     icon:  <UnitySVG
-    color="#47A248"
+    color="#FFFFFF"
     size={16}
   />,
     title: "Switch",
@@ -124,7 +124,7 @@ export const ProjectList: ProjectType[] = [
   },
   {
     icon:  <UnitySVG
-    color="#47A248"
+    color="#FFFFFF"
     size={16}
   />,
     title: "Creamy Land",

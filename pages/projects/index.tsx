@@ -9,7 +9,7 @@ export default function Projects() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-7xl text-center justify-center">
           <section className="p-4 pb-12 max-w-6xl m-auto overflow-hidden 2xl:overflow-visible">
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-5">
               {ProjectList.map((project: ProjectType) => (
                 <Project
                   key={`project-item-${project.title}`}
