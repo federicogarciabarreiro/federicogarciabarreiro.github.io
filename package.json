@@ -33,6 +33,7 @@
 		"next-themes": "^0.2.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
+		"react-unity-webgl": "^9.5.2",
 		"sonner": "^1.5.0"
 	},
 	"devDependencies": {

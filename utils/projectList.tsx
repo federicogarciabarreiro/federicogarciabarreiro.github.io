@@ -44,7 +44,7 @@ export const ProjectList: ProjectType[] = [
     imgUrl: "/images/porfolio.webp",
     videoUrl: "/videos/sediento.mp4",
     githubUrl: "https://github.com/federicogarciabarreiro/federicogarciabarreiro.github.io",
-    websiteUrl: "https://federicogarciabarreiro.github.io",
+    websiteUrl: "https://federicogarciabarreiro.github.io/",
   },
   {
     icon:  <UnitySVG

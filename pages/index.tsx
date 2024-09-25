@@ -46,9 +46,7 @@ export default function About() {
                   src="/me.jpeg"
                   className="w-24 h-24 text-large brightness-90"
                 />
-                <h1 className="text-4xl font-bold">{fullName}</h1>
-                <hr/>
-                <Button>Download CV</Button>
+                <h1 className="text-3xl font-bold">{fullName}</h1>
               </CardBody>
             </Card>
 
