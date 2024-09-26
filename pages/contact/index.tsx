@@ -3,13 +3,13 @@ import DefaultLayout from "@/layouts/default";
 import { useEffect } from "react";
 import Link from "next/link";
 
-import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 
 import { contactData } from "../../utils"
 import { Form } from "../../components/Form";
-import { MailSVG, GithubSVG, LinkedInSVG } from "../../components/ui/icons";
+import { GithubSVG, LinkedInSVG } from "../../components/ui/icons";
 import contactAnimation from "../../utils/contactSectionAnimations";
+import { Snippet } from "@nextui-org/snippet";
 
 export default function ContactPage() {
 
@@ -32,20 +32,15 @@ export default function ContactPage() {
 
           <section className="p-4 pb-12 max-w-6xl m-auto overflow-hidden 2xl:overflow-visible">
             <div className="grid grid-rows-2 grid-cols-2 gap-5 max-w-2xl mx-auto">
-              <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-1 opacity-0 mobile-animation emailCard !bg-opacity-75 shadow-none">
+              <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-1 opacity-0 mobile-animation emailCard !bg-opacity-0 shadow-none">
                 <CardBody className="flex flex-row justify-center items-center gap-2">
-                  <Button
-                   
-                    startContent={<MailSVG />}
-                  >
-                    {email}
-                  </Button>
+                  <Snippet symbol="" variant="bordered">{email}</Snippet>
                 </CardBody>
               </Card>
 
               <Card
                 isHoverable
-                className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard !bg-opacity-75 shadow-none"
+                className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard !bg-opacity-0 shadow-none"
               >
                 <Link
                   href={linkedIn}
@@ -65,7 +60,7 @@ export default function ContactPage() {
 
               <Card
                 isHoverable
-                className="col-span-full lg:row-start-1 lg:row-span-2 lg:col-start-2 cursor-pointer opacity-0 mobile-animation githubCard !bg-opacity-75 shadow-none"
+                className="col-span-full lg:row-start-1 lg:row-span-2 lg:col-start-2 cursor-pointer opacity-0 mobile-animation githubCard !bg-opacity-0 shadow-none"
               >
                 <Link
                   href={github}
@@ -76,7 +71,7 @@ export default function ContactPage() {
                   <CardBody className="flex justify-center items-center gap-2">
                     <GithubSVG />
                     <h1 className="text-1xl font-bold">@federicogarciabarreiro</h1>
-                    <p className="text-0.5xl font-bold text-center">
+                    <p className="text-0.2xl font-bold text-center">
                       Aqui puedes encontrar todos mis repositorios...
                     </p>
                   </CardBody>

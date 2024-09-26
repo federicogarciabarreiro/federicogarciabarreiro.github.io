@@ -88,9 +88,9 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" color={iconColor} />
           </Link>
-          <Link isExternal href={siteConfig.links.instagram}>
+          {/*<Link isExternal href={siteConfig.links.instagram}>
             <InstagramIcon className="text-default-500" color={iconColor} />
-          </Link>
+          </Link>*/}
           <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
@@ -105,6 +105,9 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" color={iconColor} />
         </Link>
+        <Link isExternal href={siteConfig.links.linkedin}>
+            <LinkedinIcon className="text-default-500" color={iconColor} />
+          </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>

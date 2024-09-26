@@ -5,18 +5,19 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 import { Avatar } from "@nextui-org/avatar";
-import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 import { Tooltip } from "@nextui-org/tooltip";
 
 import { Education } from "../components/Education";
 import { iconType, educationType } from "../types";
-import { educationList, techonologyIconList, whoAmIData } from "../utils";
+import { contactData, educationList, techonologyIconList, whoAmIData } from "../utils";
 import aboutAnimation from "../utils/aboutSectionAnimations";
 import { Chip } from "@nextui-org/chip";
 import IconComponent from "@/components/IconComponent";
+import { Snippet } from "@nextui-org/snippet";
 
 const { fullName, profession, whoAmI, quote } = whoAmIData;
+const { email } = contactData;
 
 export default function About() {
   useEffect(() => {
@@ -37,35 +38,36 @@ export default function About() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-7xl text-center justify-center">
+        <div className="inline-block max-w-9xl text-center justify-center">
           <div className="grid grid-cols-4 lg:grid-cols-3 gap-5">
-            <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1 !bg-opacity-75 shadow-none">
-              <CardBody className="flex-col items-center justify-center gap-2">
+            <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1 !bg-opacity-0 shadow-none">
+              <CardBody className="flex-col items-center justify-center gap-2 p-6">
                 <Avatar
                   name="LM"
                   src="/me.jpeg"
-                  className="w-24 h-24 text-large brightness-90"
+                  className="w-30 h-30 text-large brightness-90"
                 />
-                <h1 className="text-3xl font-bold">{fullName}</h1>
+                <h1 className="text-2xl font-bold">{fullName}</h1>
+                <Snippet size="md" symbol="" variant="bordered">{email}</Snippet>
               </CardBody>
             </Card>
 
             <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-2 opacity-0 mobile-animation whoAmICard !bg-opacity-90 shadow-none">
               <CardBody className="gap-2">
-                <div className="text-3xl font-bold">¿Quien soy?</div>
+                <div className="text-2xl font-bold">¿Quien soy?</div>
                 <div className="text-lg text-gray-400">{whoAmI} </div>
               </CardBody>
             </Card>
 
-            <Card className="col-span-full row-start-2 row-end-3 lg:row-start-2 lg:col-start-1 lg:col-span-1 bg-blue opacity-0 mobile-animation professionCard !bg-opacity-90 shadow-none">
+            <Card className="col-span-full row-start-2 row-end-3 lg:row-start-2 lg:col-start-1 lg:col-span-1 bg-blue opacity-0 mobile-animation professionCard !bg-opacity-0 shadow-none">
               <CardBody className="justify-center items-center">
-                <h2 className="text-2xl lg:text-3xl font-bold  text-center">
+                <h2 className="text-2xl lg:text-1xl font-bold  text-center">
                   {profession}
                 </h2>
               </CardBody>
             </Card>
 
-            <Card className="hidden lg:flex col-span-2 lg:row-start-3 lg:row-span-1 lg:col-start-3 lg:col-span-1 bg-blue opacity-0 mobile-animation quoteCard !bg-opacity-90 shadow-none">
+            <Card className="hidden lg:flex col-span-2 lg:row-start-3 lg:row-span-1 lg:col-start-3 lg:col-span-1 bg-blue opacity-0 mobile-animation quoteCard !bg-opacity-0 shadow-none">
               <CardBody className="justify-center items-center lg:row-start-2 lg:cols-start-4">
                 <div className="text-3xl font-bold text-center">
                   &#34;{quote}&#34;
@@ -74,22 +76,17 @@ export default function About() {
             </Card>
 
             <Card className="col-span-full lg:row-start-3 lg:row-span-2 lg:col-start-1 lg:col-span-1 opacity-0 mobile-animation technologyIconList">
-              <CardBody className="gap-4">
-                <h2 className="text-3xl font-bold">
+              <CardBody className="gap-14 flex flex-col justify-center items-center">
+                <h2 className="text-1.5xl font-bold center">
                   Tecnologias con las que he trabajado
                 </h2>
 
-                <div className="flex flex-wrap justify-center lg:justify-center gap-x-10 gap-y-6">
+                <div className="flex flex-wrap justify-center lg:justify-center gap-x-5 gap-y-6">
                   {techonologyIconList.map(({ name, icon }: iconType) => (
-                    <Tooltip
-                      key={`technology-item-${name}`}
-                      content={name}
-                    >
-                      <div>
-                      <IconComponent icon={icon} />
-                      <Chip variant="flat">{name}</Chip>
-                      </div>
-                    </Tooltip>
+                     <div className="flex flex-col justify-center items-center">
+                     <IconComponent icon={icon}/>
+                     <Chip variant="flat">{name}</Chip>
+                     </div>
                   ))}
                 </div>
               </CardBody>
@@ -136,7 +133,7 @@ export default function About() {
                 <path d="M20 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
               </svg>
               <CardBody className="gap-2 flex-wrap">
-                <h2 className="text-3xl font-bold ">Estudios</h2>
+                <h2 className="text-2xl font-bold ">Estudios</h2>
 
                 <div className="flex flex-col lg:flex-col gap-2">
                   {educationList.map((education: educationType) => (
