@@ -4,12 +4,12 @@ import { forwardRef } from "react";
 const IconComponent = forwardRef<HTMLDivElement, { icon: any }>(
   (props, ref): any => {
     return (
-      <p
+    <div
         ref={ref}
         {...props}
       >
         {props.icon}
-      </p>
+    </div>
     );
   }
 );

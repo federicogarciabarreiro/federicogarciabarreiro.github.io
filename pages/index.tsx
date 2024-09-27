@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import { Avatar } from "@nextui-org/avatar";
 import { Card, CardBody } from "@nextui-org/card";
-import { Tooltip } from "@nextui-org/tooltip";
 
 import { Education } from "../components/Education";
 import { iconType, educationType } from "../types";
@@ -45,7 +44,7 @@ export default function About() {
                 <Avatar
                   name="LM"
                   src="/me.jpeg"
-                  className="w-30 h-30 text-large brightness-90"
+                  className="w-25 h-25 text-large brightness-90"
                 />
                 <h1 className="text-2xl font-bold">{fullName}</h1>
                 <Snippet size="md" symbol="" variant="bordered">{email}</Snippet>
@@ -83,8 +82,8 @@ export default function About() {
 
                 <div className="flex flex-wrap justify-center lg:justify-center gap-x-5 gap-y-6">
                   {techonologyIconList.map(({ name, icon }: iconType) => (
-                     <div className="flex flex-col justify-center items-center">
-                     <IconComponent icon={icon}/>
+                     <div className="flex flex-col justify-center items-center"  key={`tecnology-item-${name}`}>
+                     <IconComponent icon={icon} key={`icon-item-${name}`}/>
                      <Chip variant="flat">{name}</Chip>
                      </div>
                   ))}
