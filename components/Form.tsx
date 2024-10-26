@@ -1,93 +1,93 @@
 import { useState, useEffect, FormEvent } from "react";
-
 import { Button } from "@nextui-org/button";
 import { Input, Textarea } from "@nextui-org/input";
 import { Toaster } from "sonner";
 import { toast } from "sonner";
-
 import { CircleCheckSVG, CircleXSVG } from "./ui/icons";
-const MAIL_KEY = process.env.NEXT_PUBLIC_MAIL_KEY;
 
 export const Form = () => {
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const [isInvalidName, setIsInvalidName] = useState<boolean>(false);
-  const [isInvalidEmail, setIsInvalidEmail] = useState<boolean>(false);
-  const [isInvalidMessage, setIsInvalidMessage] = useState<boolean>(false);
-
+  const [isInvalidName, setIsInvalidName] = useState(false);
+  const [isInvalidEmail, setIsInvalidEmail] = useState(false);
+  const [isInvalidMessage, setIsInvalidMessage] = useState(false);
+  
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    if (name !== "") setIsInvalidName(false);
-    if (
-      email.match(
-        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-      )
-    )
-      setIsInvalidEmail(false);
-    if (message !== "") setIsInvalidMessage(false);
-  }, [name, email, message]);
+  const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    const nameInvalid = !name;
+    const emailInvalid = !isValidEmail(email);
+    const messageInvalid = !message;
 
-    if (name === "") setIsInvalidName(true);
-    if (email === "") setIsInvalidEmail(true);
-    if (message === "") setIsInvalidMessage(true);
+    setIsInvalidName(nameInvalid);
+    setIsInvalidEmail(emailInvalid);
+    setIsInvalidMessage(messageInvalid);
 
-    if (!name || !email || !message) {
-      return;
-    }
+    if (nameInvalid || emailInvalid || messageInvalid) return;
 
-    fetch(`https://formcarry.com/s/${MAIL_KEY}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({ name: name, email: email, message: message }),
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        if (res.code === 200) {
-          setSubmitted(true);
-          setName("");
-          setEmail("");
-          setMessage("");
-        } else {
-          setError(res.message);
+    try {
+      const response = await fetch(
+        "https://servidor-cs0q0b2lq-federicogarciabs-projects.vercel.app/api/sendEmail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({ name, email, message }),
         }
-      })
-      .catch((error) => setError(error));
+      );
+
+      if (response.ok) {
+        setSubmitted(true);
+        resetForm();
+      } else {
+        const res = await response.json();
+        setError(res.message || "Ocurrió un error inesperado.");
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+      setError("Error al enviar el correo.");
+    }
   };
 
-  if (error) {
-    toast("El correo no se ha enviado.", {
-      className: "my-classname",
-      duration: 3000,
-      icon: <CircleXSVG />,
-    });
-  }
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setError("");
+  };
 
-  if (submitted) {
-    toast("Correo enviado correctamente.", {
-      className: "my-classname",
-      duration: 3000,
-      icon: <CircleCheckSVG />,
-    });
-  }
+  useEffect(() => {
+    if (error) {
+      toast("El correo no se ha enviado.", {
+        className: "my-classname",
+        duration: 3000,
+        icon: <CircleXSVG />,
+      });
+    }
+
+    if (submitted) {
+      toast("Correo enviado correctamente.", {
+        className: "my-classname",
+        duration: 3000,
+        icon: <CircleCheckSVG />,
+      });
+    }
+  }, [error, submitted]);
 
   return (
-    <form
-      className="flex flex-col gap-4"
-      onSubmit={(e) => handleSubmit(e)}
-    >
+    <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
       <h2 className="text-3xl font-bold">¡Contactame!</h2>
       <p className="text-0.5xl font-bold text-center">
-        Si estas interesado en escribirme puedes hacerlo en el siguiente panel.
+        Si estás interesado en escribirme, puedes hacerlo en el siguiente panel.
       </p>
       <Input
         id="name"
@@ -101,20 +101,18 @@ export const Form = () => {
       />
       <Input
         type="email"
-        name="email"
         id="email"
-        label="Correo electronico"
+        label="Correo electrónico"
         placeholder="minombre@ejemplo.com"
         isInvalid={isInvalidEmail}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        errorMessage={isInvalidEmail && "Ingrese un correo electronico valido."}
+        errorMessage={isInvalidEmail && "Ingrese un correo electrónico válido."}
       />
       <Textarea
         id="message"
-        type="text"
         label="Mensaje"
-        placeholder="Escribe aqui..."
+        placeholder="Escribe aquí..."
         minRows={4}
         isInvalid={isInvalidMessage}
         value={message}
@@ -122,7 +120,6 @@ export const Form = () => {
         errorMessage={isInvalidMessage && "Escribe tu mensaje."}
       />
       <Button type="submit">Enviar</Button>
-
       <Toaster theme="dark" />
     </form>
   );
