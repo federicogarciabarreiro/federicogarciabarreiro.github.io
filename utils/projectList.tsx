@@ -92,7 +92,7 @@ export const ProjectList: ProjectType[] = [
       }
     ],
     description:
-      "Backend que permite para alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024.",
+      "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024.",
     imgUrl: "/images/backend_0.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/",
