@@ -60,8 +60,8 @@ export const Project = (project: ProjectType) => {
           <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-black-400 opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
             <h2 className="font-bold text-3xl text-center">
-                {title}
-              </h2>
+              {title}
+            </h2>
           </div>
           {description}
           <div className=" flex flex-wrap gap-2">
@@ -84,35 +84,27 @@ export const Project = (project: ProjectType) => {
 
       <Card
         isHoverable
-        className={`${
-          websiteUrl === "NONE" && "hidden"
-        } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard !bg-opacity-75 shadow-none`}
+        className={`${websiteUrl === "NONE" && "hidden"
+          } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard !bg-opacity-75 shadow-none`}
       >
         <Link
-          href={websiteUrl}
+          href={websiteUrl || "#"}
           rel="noopener noreferrer"
           target="_blank"
-          className="min-h-full flex justify-center items-center"
+          className={`min-h-full flex justify-center items-center ${!websiteUrl ? 'pointer-events-none opacity-50' : ''}`}
         >
           <CardBody className="justify-center items-center">
-            {!websiteUrl ? (
-              <h2 className="font-bold text-xl text-center">
-                En produccion...
-              </h2>
-            ) : (
-              <LinkSVG />
-            )}
+            {websiteUrl ? <LinkSVG /> : <h2 className="font-bold text-xl text-center">En producción...</h2>}
           </CardBody>
         </Link>
       </Card>
 
       <Card
         isHoverable
-        className={`${
-          websiteUrl === "NONE"
-            ? "lg:col-start-3 col-span-4"
-            : "lg:col-start-4 col-span-2"
-        }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard !bg-opacity-75 shadow-none`}
+        className={`${websiteUrl === "NONE"
+          ? "lg:col-start-3 col-span-4"
+          : "lg:col-start-4 col-span-2"
+          }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard !bg-opacity-75 shadow-none`}
       >
         <Link
           href={githubUrl}
