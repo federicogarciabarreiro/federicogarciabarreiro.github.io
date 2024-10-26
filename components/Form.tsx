@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/button";
 import { Input, Textarea } from "@nextui-org/input";
 import { Toaster } from "sonner";
 import { toast } from "sonner";
-import { CircleCheckSVG, CircleXSVG } from "./ui/icons";
+import { CircleCheckSVG } from "./ui/icons";
 
 export const Form = () => {
   const [name, setName] = useState("");
@@ -15,7 +15,6 @@ export const Form = () => {
   const [isInvalidMessage, setIsInvalidMessage] = useState(false);
   
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
 
   const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -33,10 +32,11 @@ export const Form = () => {
     if (nameInvalid || emailInvalid || messageInvalid) return;
 
     try {
-      const response = await fetch(
-        "https://servidor-web-three.vercel.app/api/sendEmail",
+      await fetch(
+        "https://servidor-web-three.vercel.app/api/sendMail",
         {
           method: "POST",
+          mode: 'no-cors',
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json"
@@ -44,17 +44,10 @@ export const Form = () => {
           body: JSON.stringify({ name, email, message }),
         }
       );
-
-      if (response.ok) {
-        setSubmitted(true);
-        resetForm();
-      } else {
-        const res = await response.json();
-        setError(res.message || "Ocurrió un error inesperado.");
-      }
+      setSubmitted(true);
+      resetForm();
     } catch (error) {
       console.error("Error en la solicitud:", error);
-      setError("Error al enviar el correo.");
     }
   };
 
@@ -62,26 +55,18 @@ export const Form = () => {
     setName("");
     setEmail("");
     setMessage("");
-    setError("");
   };
 
   useEffect(() => {
-    if (error) {
-      toast("El correo no se ha enviado.", {
-        className: "my-classname",
-        duration: 3000,
-        icon: <CircleXSVG />,
-      });
-    }
-
     if (submitted) {
       toast("Correo enviado correctamente.", {
         className: "my-classname",
         duration: 3000,
         icon: <CircleCheckSVG />,
       });
+      setSubmitted(false); // Resetear para evitar que el mensaje se muestre nuevamente en futuras renders
     }
-  }, [error, submitted]);
+  }, [submitted]);
 
   return (
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
