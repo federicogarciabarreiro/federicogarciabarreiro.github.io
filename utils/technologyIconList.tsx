@@ -2,29 +2,21 @@ import { iconType } from "../types";
 import React from "react";
 
 import { Card } from "@nextui-org/card";
-import { CPPIcon, CSharpIcon,
+import { CSharpIcon,
          GDScriptIcon,
          GodotIcon,
          UnityIcon,
-         UnrealIcon,
          VSCodeIcon,
-         GameIcon,
-         WEBFrontendIcon, 
          ReactIcon,
-         BootstrapIcon, 
          HTMLIcon, 
          CSSIcon,
-         JavascriptIcon, 
-         WEBBackendIcon,
+         JavascriptIcon,
          FastAPIIcon, 
          PythonIcon, 
          SupabaseIcon, 
-         OpenAIIcon, 
-         RaspberryPIIcon, 
-         ApplicationIcon,
+         OpenAIIcon,
          NetbeansIcon, 
-         JavaIcon, 
-         JsonIcon, 
+         JavaIcon
    } from "@/components/icons";
 
 let color: string = "#9ca3af";

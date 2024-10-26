@@ -19,7 +19,6 @@ const videoAnimation = () => {
       info.target,
       {
         opacity: [0, 0.2, 0.8, 1],
-        // transform: ["translateY(100px) ", "none"],
       },
       { duration: 0.5, delay: 0.2 }
     );

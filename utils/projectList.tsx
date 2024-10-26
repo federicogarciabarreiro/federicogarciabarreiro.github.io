@@ -1,6 +1,6 @@
 import { PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
 import { ProjectType } from "../types";
-import { FastAPIIcon, GodotIcon, GodotSVG, PythonIcon } from "@/components/icons";
+import { GodotSVG } from "@/components/icons";
 
 export const ProjectList: ProjectType[] = [
   {
@@ -41,7 +41,7 @@ export const ProjectList: ProjectType[] = [
       }
     ],
     description:
-      "Porfolio personal desarrollado integralmente en React utilizando componentes propios de la libreria NextUI, actualizado al año 2024.",
+      "Porfolio personal desarrollado en React utilizando componentes propios de la libreria NextUI, actualizado al año 2024.",
     imgUrl: "/images/porfolio.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/federicogarciabarreiro.github.io",
