@@ -35,7 +35,7 @@ export const Project = (project: ProjectType) => {
   return (
     <div className="grid grid-cols-4 gap-5 pb-4 overflow-hidden">
       <div className="flex lg:hidden items-center col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold opacity-0 mobile-animation titleSection">
-        <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>
+        <span className="bg-[#303036] p-1 rounded-md mr-2"> {icon}</span>
         {title}
       </div>
 
@@ -57,7 +57,7 @@ export const Project = (project: ProjectType) => {
 
       <Card className="col-span-full lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 lg:min-h-[250px] opacity-0 mobile-animation descriptionCard !bg-opacity-75 shadow-none">
         <CardBody className="text-lg flex justify-between gap-4">
-          <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-white opacity-0 mobile-animation titleSection">
+          <div className="hidden lg:flex col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 text-3xl font-bold text-black-400 opacity-0 mobile-animation titleSection">
             <span className="bg-[#303036] p-2 rounded-md mr-2"> {icon}</span>{" "}
             <h2 className="font-bold text-3xl text-center">
                 {title}

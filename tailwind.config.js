@@ -46,7 +46,7 @@ module.exports = {
           colors: {
             primary: "#FF6F61", // Un coral suave, alegre y cálido
             secondary: "#FFB74D", // Naranja cálido para detalles
-            background: "#FFF8E1", // Amarillo pálido, cálido y agradable
+            background: "#E2E8F0", // Gris claro
             accent: "#4DB6AC", // Verde agua para contrastar de forma amigable
             text: "#374151", // Gris oscuro para un buen contraste de texto
           }

@@ -95,7 +95,7 @@ export const Navbar = () => {
             <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
 
-          <ThemeSwitch />
+          {/*<ThemeSwitch />*/}
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
         </NavbarItem>
@@ -108,7 +108,7 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
-        <ThemeSwitch />
+         {/*<ThemeSwitch />*/}
         <NavbarMenuToggle />
       </NavbarContent>
 

@@ -9,8 +9,9 @@ export const UnitySVG = ({color, size}: IconType) => {
             xmlns="http://www.w3.org/2000/svg" 
             role="img" 
             width={size}
+            height={size}
             fill={color}
-            viewBox="0 0 50 50">
+            viewBox="1 0 50 50">
     
     <title>Unity</title>
 

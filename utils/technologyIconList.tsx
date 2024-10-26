@@ -41,17 +41,6 @@ const cardStyle = {
 
 export const techonologyIconList: iconType[] = [
   {
-    name: "Juegos",
-    icon: (
-      <Card style={cardStyle}>
-      <GameIcon 
-         color={color}
-         fixedWidth={true}
-         transform="shrink-4"
-       />
-     </Card>
-    ),
-  },{
     name: "Unity",
     icon: (
       <Card style={cardStyle}>
@@ -73,42 +62,6 @@ export const techonologyIconList: iconType[] = [
          transform="shrink-2"
        />
      </Card>
-    ),
-  },
-  {
-    name: "VSCode",
-    icon: (
-      <Card style={cardStyle}>
-       <VSCodeIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "Unreal",
-    icon: (
-      <Card style={cardStyle}>
-       <UnrealIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "C++",
-    icon: (
-      <Card style={cardStyle}>
-       <CPPIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
     ),
   },
   {
@@ -134,19 +87,19 @@ export const techonologyIconList: iconType[] = [
         />
       </Card>
     ),
-  },
+  },   
   {
-    name: "Diseño WEB",
+    name: "React",
     icon: (
       <Card style={cardStyle}>
-       <WEBFrontendIcon 
+       <ReactIcon 
           color={color}
           fixedWidth={true}
           transform="shrink-4"
         />
       </Card>
     ),
-  },
+  }, 
   {
     name: "HTML",
     icon: (
@@ -184,42 +137,6 @@ export const techonologyIconList: iconType[] = [
     ),
   },
   {
-    name: "React",
-    icon: (
-      <Card style={cardStyle}>
-       <ReactIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "Bootstrap",
-    icon: (
-      <Card style={cardStyle}>
-       <BootstrapIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "Backend",
-    icon: (
-      <Card style={cardStyle}>
-       <WEBBackendIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
     name: "FastAPI",
     icon: (
       <Card style={cardStyle}>
@@ -242,6 +159,18 @@ export const techonologyIconList: iconType[] = [
         />
       </Card>
     ),
+  }, 
+  {
+    name: "OpenAI",
+    icon: (
+      <Card style={cardStyle}>
+       <OpenAIIcon 
+          color={color}
+          fixedWidth={true}
+          transform="shrink-4"
+        />
+      </Card>
+    ),
   },
   {
     name: "Supabase",
@@ -256,34 +185,10 @@ export const techonologyIconList: iconType[] = [
     ),
   },
   {
-    name: "API OpenAI",
+    name: "VSCode",
     icon: (
       <Card style={cardStyle}>
-       <OpenAIIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "RaspberryPI",
-    icon: (
-      <Card style={cardStyle}>
-       <RaspberryPIIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "Aplicaciones",
-    icon: (
-      <Card style={cardStyle}>
-       <ApplicationIcon 
+       <VSCodeIcon 
           color={color}
           fixedWidth={true}
           transform="shrink-4"
@@ -308,18 +213,6 @@ export const techonologyIconList: iconType[] = [
     icon: (
       <Card style={cardStyle}>
        <JavaIcon 
-          color={color}
-          fixedWidth={true}
-          transform="shrink-4"
-        />
-      </Card>
-    ),
-  },
-  {
-    name: "JSON",
-    icon: (
-      <Card style={cardStyle}>
-       <JsonIcon 
           color={color}
           fixedWidth={true}
           transform="shrink-4"
