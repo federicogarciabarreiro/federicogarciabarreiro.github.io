@@ -46,7 +46,9 @@ export const Navbar = () => {
       labelPlacement="outside"
       placeholder="Buscar..."
       startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
+        <div className="flex">
+  <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
+</div>
       }
       type="search"
     />

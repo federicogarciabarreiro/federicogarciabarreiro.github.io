@@ -20,7 +20,7 @@ const DownloadCVButton = () => {
   };
 
   return (
-    <a href="/assets/cv.pdf" download>
+    <a href="/assets/Profile.pdf" download>
       <Button
         ref={buttonRef}
         disableRipple

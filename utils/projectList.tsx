@@ -1,12 +1,12 @@
-import { ReactSVG, UnitySVG } from "@/components/ui/icons";
+import { PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
 import { ProjectType } from "../types";
-import { GodotIcon, GodotSVG } from "@/components/icons";
+import { FastAPIIcon, GodotIcon, GodotSVG, PythonIcon } from "@/components/icons";
 
 export const ProjectList: ProjectType[] = [
   {
     icon:  <ReactSVG
     color="#FFFFFF"
-    size={22}
+    size={25}
   />,
     title: "Porfolio",
     subtitle: "Porfolio actualizado al año 2024.",
@@ -41,11 +41,54 @@ export const ProjectList: ProjectType[] = [
       }
     ],
     description:
-      "Porfolio actualizado al año 2024.",
+      "Porfolio personal desarrollado integralmente en React utilizando componentes propios de la libreria NextUI, actualizado al año 2024.",
     imgUrl: "/images/porfolio.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/federicogarciabarreiro.github.io",
     websiteUrl: "https://federicogarciabarreiro.github.io/",
+  },{
+    icon:  <PythonSVG
+    color="#FFFFFF"
+    size={25}
+  />,
+    title: "Servidor",
+    subtitle: "Backend para alojar informacion y realizar solicitudes a diferentes servicios relacionados con los proyectos, actualizado al año 2024.",
+    technologies: [
+      {
+        name: "Visual Studio Code",
+        icon: (<></>),
+      },
+      {
+        name: "FastAPI",
+        icon: (<></>),
+      },
+      {
+        name: "Python",
+        icon: (<></>),
+      },
+      {
+        name: "Uvicorn",
+        icon: (<></>),
+      },
+      {
+        name: "Supabase",
+        icon: (<></>),
+      },
+      {
+        name: "GitHub",
+        icon: (<></>),
+      },
+      {
+        name: "GitHub Codespaces",
+        icon: (<></>),
+      }
+    ],
+    description:
+      "Backend que permite para alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024.",
+    imgUrl: "/images/backend_0.webp",
+    videoUrl: "",
+    githubUrl: "https://github.com/federicogarciabarreiro/",
+    websiteUrl: "",
   },
   {
     icon:  <GodotSVG

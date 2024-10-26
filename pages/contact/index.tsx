@@ -34,7 +34,7 @@ export default function ContactPage() {
             <div className="grid grid-rows-2 grid-cols-2 gap-5 max-w-4xl mx-auto">
               <Card className="col-span-full lg:row-start-1 lg:row-span-1 lg:col-span-1 opacity-0 mobile-animation emailCard !bg-opacity-0 shadow-none">
                 <CardBody className="flex flex-row justify-center items-center gap-2">
-                  <Snippet symbol="" variant="bordered">{email}</Snippet>
+                  <Snippet size="sm" symbol="" variant="bordered">{email}</Snippet>
                 </CardBody>
               </Card>
 

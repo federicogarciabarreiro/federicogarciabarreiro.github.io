@@ -52,7 +52,7 @@ export default function About() {
                 <div className="mt-2" />
                 <h1 className="text-2xl font-bold">{fullName}</h1>
                 <div className="mt-2" />
-                <Snippet size="md" symbol="" variant="bordered">{email}</Snippet>
+                <Snippet size="sm" symbol="" variant="bordered">{email}</Snippet>
                 <div className="mt-2" />
                 <DownloadCVButton/>
               </CardBody>

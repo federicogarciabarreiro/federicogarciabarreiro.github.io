@@ -46,8 +46,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
       <UnityIcon 
          color={color}
-         fixedWidth={true}
-         transform="shrink-4"
+         transform="scale(0.25)"
        />
      </Card>
     ),
@@ -58,8 +57,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
       <CSharpIcon 
          color={color}
-         fixedWidth={true}
-         transform="shrink-2"
+         transform="scale(0.5)"
        />
      </Card>
     ),
@@ -70,8 +68,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <GodotIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -82,8 +79,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <GDScriptIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -94,8 +90,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <ReactIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -106,8 +101,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <HTMLIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -118,8 +112,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <CSSIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -130,8 +123,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <JavascriptIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -142,8 +134,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <FastAPIIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -154,8 +145,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <PythonIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -166,8 +156,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <OpenAIIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -178,8 +167,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <SupabaseIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -190,8 +178,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <VSCodeIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -202,8 +189,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <NetbeansIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
@@ -214,8 +200,7 @@ export const techonologyIconList: iconType[] = [
       <Card style={cardStyle}>
        <JavaIcon 
           color={color}
-          fixedWidth={true}
-          transform="shrink-4"
+          transform="scale(0.25)"
         />
       </Card>
     ),
