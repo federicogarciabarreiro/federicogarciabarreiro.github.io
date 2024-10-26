@@ -32,6 +32,14 @@ export const ProjectList: ProjectType[] = [
         icon: (<></>),
       },
       {
+        name: "Vercel",
+        icon: (<></>),
+      },
+      {
+        name: "Next.js",
+        icon: (<></>),
+      },
+      {
         name: "GitHub",
         icon: (<></>),
       },
@@ -41,7 +49,7 @@ export const ProjectList: ProjectType[] = [
       }
     ],
     description:
-      "Porfolio personal desarrollado en React utilizando componentes propios de la libreria NextUI, actualizado al año 2024.",
+      "Porfolio personal desarrollado en React utilizando componentes propios de la libreria NextUI, actualizado al año 2024. El sistema de gestion de contacto se ejecuta en un servidor Next.js alojado en Vercel.",
     imgUrl: "/images/porfolio.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/federicogarciabarreiro.github.io",
