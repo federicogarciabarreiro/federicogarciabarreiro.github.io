@@ -34,7 +34,7 @@ export const Form = () => {
 
     try {
       const response = await fetch(
-        "https://servidor-cs0q0b2lq-federicogarciabs-projects.vercel.app/api/sendEmail",
+        "https://servidor-lsks5ar4o-federicogarciabs-projects.vercel.app/api/sendEmail",
         {
           method: "POST",
           headers: {
