@@ -96,7 +96,7 @@ export const ProjectList: ProjectType[] = [
     imgUrl: "/images/backend_0.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/",
-    websiteUrl: "",
+    websiteUrl: "https://fast-api-python-backend-one.vercel.app",
   },
   {
     icon:  <GodotSVG
