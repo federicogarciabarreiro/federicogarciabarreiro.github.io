@@ -89,10 +89,14 @@ export const ProjectList: ProjectType[] = [
       {
         name: "GitHub Codespaces",
         icon: (<></>),
+      },
+      {
+        name: "Vercel",
+        icon: (<></>),
       }
     ],
     description:
-      "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024.",
+      "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024 y alojado en Vercel.",
     imgUrl: "/images/backend_0.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/",
