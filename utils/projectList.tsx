@@ -99,8 +99,44 @@ export const ProjectList: ProjectType[] = [
       "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024 y alojado en Vercel.",
     imgUrl: "/images/backend_0.webp",
     videoUrl: "",
-    githubUrl: "https://github.com/federicogarciabarreiro/",
+    githubUrl: "https://github.com/federicogarciabarreiro/_FastAPIPythonBackendProjects",
     websiteUrl: "https://fast-api-python-backend-one.vercel.app",
+  },
+  {
+    icon:  <UnitySVG
+    color="#FFFFFF"
+    size={25}
+  />,
+    title: "Backoffice",
+    subtitle: "Backoffice diseñado para realizar operaciones de lectura/escritura a traves de la implementacion del Backend FastAPIPython, actualizado al año 2024.",
+    technologies: [
+      {
+        name: "Visual Studio Code",
+        icon: (<></>),
+      },
+      {
+        name: "Unity",
+        icon: (<></>),
+      },
+      {
+        name: "C#",
+        icon: (<></>),
+      },
+      {
+        name: "UnityWebRequest",
+        icon: (<></>),
+      },
+      {
+        name: "GitHub",
+        icon: (<></>),
+      }
+    ],
+    description:
+      "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024 y alojado en Vercel.",
+    imgUrl: "/images/backoffice.webp",
+    videoUrl: "",
+    githubUrl: "https://github.com/federicogarciabarreiro/_UnityBackofficeProjects",
+    websiteUrl: "",
   },
   {
     icon:  <GodotSVG

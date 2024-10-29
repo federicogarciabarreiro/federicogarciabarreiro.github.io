@@ -44,11 +44,11 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            primary: "#FF6F61", // Un coral suave, alegre y cálido
-            secondary: "#FFB74D", // Naranja cálido para detalles
-            background: "#E2E8F0", // Gris claro
-            accent: "#4DB6AC", // Verde agua para contrastar de forma amigable
-            text: "#374151", // Gris oscuro para un buen contraste de texto
+            primary: "#81E6D9", // Verde agua suave
+            secondary: "#D6BCFA", // Morado claro
+            background: "#1A202C", // Gris oscuro
+            accent: "#F6AD55", // Naranja suave
+            text: "#E2E8F0", // Gris claro
           }
         },
         dark: {
