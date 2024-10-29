@@ -133,7 +133,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Backend que permite alojar informacion; como datos de usuarios, sistemas de ranking y acciones tomadas por cada jugador. Ademas gestiona solicitudes a diferentes servicios relacionados con cada proyecto. Actualizado al año 2024 y alojado en Vercel.",
-    imgUrl: "/images/backoffice.webp",
+    imgUrl: "/images/backoffice_0.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/_UnityBackofficeProjects",
     websiteUrl: "",
