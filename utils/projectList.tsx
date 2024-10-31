@@ -129,6 +129,10 @@ export const ProjectList: ProjectType[] = [
       {
         name: "GitHub",
         icon: (<></>),
+      },
+      {
+        name: "Itch.io",
+        icon: (<></>),
       }
     ],
     description:
@@ -136,7 +140,7 @@ export const ProjectList: ProjectType[] = [
     imgUrl: "/images/backoffice_0.webp",
     videoUrl: "",
     githubUrl: "https://github.com/federicogarciabarreiro/_UnityBackofficeProjects",
-    websiteUrl: "",
+    websiteUrl: "https://fedeegb.itch.io/unitybackofficeprojects",
   },
   {
     icon:  <GodotSVG
