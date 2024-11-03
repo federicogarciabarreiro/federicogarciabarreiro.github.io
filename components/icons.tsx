@@ -557,7 +557,41 @@ export const GDScriptIcon: React.FC<IconSvgProps> = React.memo(({
   );
 });
 
+export const GMakerIcon: React.FC<IconSvgProps> = React.memo(({
+  size = 24,
+  width,
+  height,
+  color,
+  ...props
+}) => {
 
+  const iconColor = useIconColor();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
+  return (
+    <svg
+      height={size || height}
+      viewBox="0 0 32 32"
+      width={size || width}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "scale(1)" : "scale(0.9)",
+        transition: "opacity 0.5s ease, transform 0.5s ease",
+        width: "70%",
+        height: "70%",
+      }}
+      {...props}
+    >
+       <path 
+       d="M 14.216 24.167 h -0.989 a 3.24 3.24 0 0 1 -2.811 -1.649 L 6.667 16 l 4.681 -8.167 H 16.2 l -4.34 8.176 l 0.057 0.032 L 13.936 19.5 H 16.82 Z M 8.455 10.535 l -1.27 -2.21 a 1 1 0 0 0 -0.859 -0.492 H 2 l 4 6.992 Z M 21.54 9.482 a 3.239 3.239 0 0 0 -2.812 -1.649 H 17.523 L 15.045 12.5 H 18.02 L 20.083 16 l -4.531 8.167 h 5.056 L 25.333 16 Z M 26 17.172 l -2.47 4.27 l 1.283 2.233 a 1 1 0 0 0 0.859 0.492 H 30 Z"
+       fill={iconColor}/>
+    </svg>
+  );
+});
 
 export const GameIcon: React.FC<IconSvgProps> = React.memo(({
   size = 24,

@@ -16,7 +16,8 @@ import { CSharpIcon,
          SupabaseIcon, 
          OpenAIIcon,
          NetbeansIcon, 
-         JavaIcon
+         JavaIcon,
+         GMakerIcon
    } from "@/components/icons";
 
 let color: string = "#9ca3af";
@@ -70,6 +71,17 @@ export const techonologyIconList: iconType[] = [
     icon: (
       <Card style={cardStyle}>
        <GDScriptIcon 
+          color={color}
+          transform="scale(0.25)"
+        />
+      </Card>
+    ),
+  },
+  {
+    name: "GameMaker",
+    icon: (
+      <Card style={cardStyle}>
+       <GMakerIcon 
           color={color}
           transform="scale(0.25)"
         />

@@ -1,4 +1,4 @@
-import { PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
+import { MakerSVG, PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
 import { ProjectType } from "../types";
 import { GodotSVG } from "@/components/icons";
 
@@ -239,9 +239,9 @@ export const ProjectList: ProjectType[] = [
     websiteUrl: "",
   },
   {
-    icon:  <UnitySVG
+    icon:  <MakerSVG
     color="#FFFFFF"
-    size={22}
+    size={25}
   />,
     title: "Creamy Land",
     subtitle: "",
@@ -249,7 +249,8 @@ export const ProjectList: ProjectType[] = [
       {
         name: "Game Maker",
         icon: (<></>),
-      },{
+      },
+      {
         name: "Lenguaje GML",
         icon: (<></>),
       },
