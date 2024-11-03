@@ -9,7 +9,7 @@ export const ProjectList: ProjectType[] = [
     size={25}
   />,
     title: "Porfolio",
-    subtitle: "Porfolio actualizado al año 2024.",
+    subtitle: "",
     technologies: [
       {
         name: "Visual Studio Code",
@@ -60,7 +60,7 @@ export const ProjectList: ProjectType[] = [
     size={25}
   />,
     title: "Servidor",
-    subtitle: "Backend para alojar informacion y realizar solicitudes a diferentes servicios relacionados con los proyectos, actualizado al año 2024.",
+    subtitle: "",
     technologies: [
       {
         name: "Visual Studio Code",
@@ -108,7 +108,7 @@ export const ProjectList: ProjectType[] = [
     size={25}
   />,
     title: "Backoffice",
-    subtitle: "Backoffice diseñado para realizar operaciones de lectura/escritura a traves de la implementacion del Backend FastAPIPython, actualizado al año 2024.",
+    subtitle: "",
     technologies: [
       {
         name: "Visual Studio Code",
@@ -148,7 +148,7 @@ export const ProjectList: ProjectType[] = [
     size={25}
   />,
     title: "Sediento",
-    subtitle: "Juego del tipo puzzle, diseñado para la Indie Spain Jam 2023.",
+    subtitle: "",
     technologies: [
       {
         name: "Godot Engine",
@@ -192,7 +192,7 @@ export const ProjectList: ProjectType[] = [
     size={22}
   />,
     title: "Sparkle",
-    subtitle: "Juego del tipo runner 2D, diseñado de manera integral durante la carrera.",
+    subtitle: "",
     technologies: [
       {
         name: "Unity Engine",
@@ -244,14 +244,25 @@ export const ProjectList: ProjectType[] = [
     size={22}
   />,
     title: "Creamy Land",
-    subtitle: "Juego del tipo plataforma 3D, diseñado como proyecto final de grado para la carrera de videojuegos en equipo.",
+    subtitle: "",
     technologies: [
       {
-        name: "Unity Engine",
+        name: "Game Maker",
+        icon: (<></>),
+      },{
+        name: "Lenguaje GML",
         icon: (<></>),
       },
       {
-        name: "Lenguaje C#",
+        name: "OperaGX",
+        icon: (<></>),
+      },
+      {
+        name: "GX.games",
+        icon: (<></>),
+      },
+      {
+        name: "Strip",
         icon: (<></>),
       },
       {
@@ -264,10 +275,6 @@ export const ProjectList: ProjectType[] = [
       },
       {
         name: "Adobe Illustrator",
-        icon: (<></>),
-      },
-      {
-        name: "MS Visual Studio",
         icon: (<></>),
       },
       {
@@ -288,7 +295,7 @@ export const ProjectList: ProjectType[] = [
     size={22}
   />,
     title: "Switch",
-    subtitle: "Juego del tipo runner 3D, diseñado en grupo durante mi carrera en el año 2020.",
+    subtitle: "",
     technologies: [
       {
         name: "Unity Engine",
@@ -296,6 +303,22 @@ export const ProjectList: ProjectType[] = [
       },
       {
         name: "Lenguaje C#",
+        icon: (<></>),
+      },
+      {
+        name: "Linq",
+        icon: (<></>),
+      },
+      {
+        name: "Design Patterns",
+        icon: (<></>),
+      },
+      {
+        name: "Android",
+        icon: (<></>),
+      },
+      {
+        name: "Google Playstore",
         icon: (<></>),
       },
       {
