@@ -85,7 +85,7 @@ export const Project = (project: ProjectType) => {
       <Card
         isHoverable
         className={`${websiteUrl === "NONE" && "hidden"
-          } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard !bg-opacity-75 shadow-none`}
+          } col-span-2 lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:max-h-24 lg:col-end-4 opacity-0 mobile-animation githubUrlCard !bg-opacity-75 shadow-none ${!websiteUrl ? 'pointer-events-none' : ''}`}
       >
         <Link
           href={websiteUrl || "#"}
@@ -101,19 +101,19 @@ export const Project = (project: ProjectType) => {
 
       <Card
         isHoverable
-        className={`${websiteUrl === "NONE"
+        className={`${githubUrl === "NONE"
           ? "lg:col-start-3 col-span-4"
           : "lg:col-start-4 col-span-2"
-          }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard !bg-opacity-75 shadow-none`}
+          }  lg:row-start-3 lg:row-end-4 lg:max-h-24 lg:col-end-5 opacity-0 mobile-animation websiteUrlCard !bg-opacity-75 shadow-none ${!githubUrl ? 'pointer-events-none' : ''}`}
       >
         <Link
           href={githubUrl}
           rel="noopener noreferrer"
           target="_blank"
-          className="min-h-full flex justify-center items-center"
+          className={`min-h-full flex justify-center items-center ${!githubUrl ? 'pointer-events-none opacity-50' : ''}`}
         >
           <CardBody className="justify-center items-center">
-            <GithubSVG />
+          {githubUrl ? <GithubSVG /> : <h2 className="font-bold text-xl text-center">Privado.</h2>}
           </CardBody>
         </Link>
       </Card>

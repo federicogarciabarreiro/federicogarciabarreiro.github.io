@@ -183,7 +183,7 @@ export const ProjectList: ProjectType[] = [
       "Despiertas en una misteriosa habitación, junto a tu ser querido, pero algo está terriblemente mal. Debes explorar la habitación, resolver enigmas y abrir candados para escapar antes de que caiga la noche. Cada segundo cuenta, y el tiempo se agota rápidamente. ¿Podrás descubrir la verdad oculta detrás de esta pesadilla antes de que sea demasiado tarde?",
     imgUrl: "/images/sediento_0.webp",
     videoUrl: "",
-    githubUrl: "https://github.com/federicogarciabarreiro/",
+    githubUrl: "",
     websiteUrl: "https://fedeegb.itch.io/sediento",
   },
   {
@@ -235,7 +235,7 @@ export const ProjectList: ProjectType[] = [
       "¡Sumérgete en Sparkle y ayuda a dos hermanos separados por fuerzas desconocidas! Con el poder de manipular el tiempo y el espacio, enfrentarán desafíos sobrenaturales y oscuros enemigos en su misión por reunirse y cambiar el destino del universo. ¡La aventura comienza ahora!",
     imgUrl: "/images/sparkle_0.webp",
     videoUrl: "",
-    githubUrl: "https://github.com/federicogarciabarreiro/",
+    githubUrl: "",
     websiteUrl: "",
   },
   {
@@ -279,7 +279,7 @@ export const ProjectList: ProjectType[] = [
       "¡Encarna a los valientes hermanos Leafcream y Firecream en Creamy Land! Corre a través de un mundo helado lleno de desafíos para rescatar a la princesa Lovecream. Supera obstáculos, recoge premios y restaura la paz en este dulce reino. ¡Tu aventura comienza ahora!",
     imgUrl: "/images/creamyland_0.webp",
     videoUrl: "",
-    githubUrl: "https://github.com/federicogarciabarreiro/",
+    githubUrl: "",
     websiteUrl: "",
   },
   {
@@ -311,7 +311,7 @@ export const ProjectList: ProjectType[] = [
       "¡Desafía tus reflejos en Switch! Controla una nave que se desplaza a toda velocidad a través de un tubo infinito, cambiando de dirección con un solo clic. El entorno responde al ritmo de la música, creando una experiencia visual y auditiva única. ¿Cuánto tiempo podrás mantener el ritmo y esquivar los obstáculos?",
     imgUrl: "/images/switch_0.webp",
     videoUrl: "",
-    githubUrl: "https://github.com/federicogarciabarreiro/",
+    githubUrl: "",
     websiteUrl: "",
   }
 ];
