@@ -35,5 +35,6 @@ export const siteConfig = {
     github: "https://github.com/federicogarciabarreiro",
     linkedin: "https://www.linkedin.com/in/fedegarbar",
     instagram: "https://www.instagram.com/fedeegb",
+    itchio: "https://fedeegb.itch.io"
   },
 };

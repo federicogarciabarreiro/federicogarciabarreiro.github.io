@@ -16,13 +16,12 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
 import {
   GithubIcon,
   SearchIcon,
   Logo,
   LinkedinIcon,
-  InstagramIcon,
+  ItchIoIcon,
 } from "@/components/icons";
 import { useTheme } from "next-themes";
 
@@ -90,9 +89,15 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" color={iconColor} />
           </Link>
+
+          <Link isExternal href={siteConfig.links.itchio}>
+            <ItchIoIcon className="text-default-500" color={iconColor} />
+          </Link>
+
           <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
+       
 
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
@@ -103,9 +108,15 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" color={iconColor} />
         </Link>
+
+        <Link isExternal href={siteConfig.links.itchio}>
+            <ItchIoIcon className="text-default-500" color={iconColor} />
+          </Link>
+
         <Link isExternal href={siteConfig.links.linkedin}>
             <LinkedinIcon className="text-default-500" color={iconColor} />
           </Link>
+
         <NavbarMenuToggle />
       </NavbarContent>
 
