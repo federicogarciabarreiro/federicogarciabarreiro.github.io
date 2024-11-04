@@ -236,7 +236,7 @@ export const ProjectList: ProjectType[] = [
     imgUrl: "/images/sparkle_0.webp",
     videoUrl: "",
     githubUrl: "",
-    websiteUrl: "",
+    websiteUrl: "https://fedeegb.itch.io/sparkle",
   },
   {
     icon:  <MakerSVG
