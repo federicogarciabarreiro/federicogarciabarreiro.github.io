@@ -2658,12 +2658,12 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.7.tgz#2f776bcb53adc9e13b2c0dfd493dfcbd7de43612"
   integrity sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==
 
-"@types/node@22.5.2":
-  version "22.5.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.2.tgz#e42344429702e69e28c839a7e16a8262a8086793"
-  integrity sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==
+"@types/node@22.9.0":
+  version "22.9.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.9.0.tgz#b7f16e5c3384788542c72dc3d561a7ceae2c0365"
+  integrity sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==
   dependencies:
-    undici-types "~6.19.2"
+    undici-types "~6.19.8"
 
 "@types/prop-types@*":
   version "15.7.12"
@@ -2685,10 +2685,10 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/react@18.3.5":
-  version "18.3.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.5.tgz#5f524c2ad2089c0ff372bbdabc77ca2c4dbadf8f"
-  integrity sha512-WeqMfGJLGuLCqHGYRGHxnKrXcTitc6L/nBUWfWPcTarG3t9PsquqUMuVeXZeca+mglY4Vo5GZjCi0A3Or2lnxA==
+"@types/react@18.3.12":
+  version "18.3.12"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.12.tgz#99419f182ccd69151813b7ee24b792fe08774f60"
+  integrity sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -5424,10 +5424,10 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typescript@5.5.4:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
-  integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
+typescript@5.6.3:
+  version "5.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
+  integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
@@ -5439,7 +5439,7 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-undici-types@~6.19.2:
+undici-types@~6.19.8:
   version "6.19.8"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==

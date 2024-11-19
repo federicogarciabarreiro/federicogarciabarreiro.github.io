@@ -76,17 +76,6 @@ export const techonologyIconList: iconType[] = [
         />
       </Card>
     ),
-  },
-  {
-    name: "GameMaker",
-    icon: (
-      <Card style={cardStyle}>
-       <GMakerIcon 
-          color={color}
-          transform="scale(0.25)"
-        />
-      </Card>
-    ),
   },   
   {
     name: "React",

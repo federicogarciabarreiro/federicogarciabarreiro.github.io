@@ -13,6 +13,7 @@ export const Project = (project: ProjectType) => {
   const {
     description,
     title,
+    subtitle,
     icon,
     imgUrl,
     videoUrl,
@@ -63,6 +64,7 @@ export const Project = (project: ProjectType) => {
               {title}
             </h2>
           </div>
+          {subtitle ? <div><h2 className="text-2xl">({subtitle})</h2></div> : <></>}
           {description}
           <div className=" flex flex-wrap gap-2">
             {technologies.map(

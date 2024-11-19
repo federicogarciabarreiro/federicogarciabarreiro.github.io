@@ -1,4 +1,4 @@
-import { MakerSVG, PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
+import { PythonSVG, ReactSVG, UnitySVG } from "@/components/ui/icons";
 import { ProjectType } from "../types";
 import { GodotSVG } from "@/components/icons";
 
@@ -148,7 +148,7 @@ export const ProjectList: ProjectType[] = [
     size={25}
   />,
     title: "Sediento",
-    subtitle: "",
+    subtitle: "IndieSpainJam2023",
     technologies: [
       {
         name: "Godot Engine",
@@ -192,7 +192,7 @@ export const ProjectList: ProjectType[] = [
     size={22}
   />,
     title: "Sparkle",
-    subtitle: "",
+    subtitle: "TFG",
     technologies: [
       {
         name: "Unity Engine",
@@ -237,33 +237,72 @@ export const ProjectList: ProjectType[] = [
     videoUrl: "",
     githubUrl: "",
     websiteUrl: "https://fedeegb.itch.io/sparkle",
+  },{
+    icon:  <UnitySVG
+    color="#FFFFFF"
+    size={22}
+  />,
+    title: "Drill Divers",
+    subtitle: "MJAM24",
+    technologies: [
+      {
+        name: "Unity Engine",
+        icon: (<></>),
+      },
+      {
+        name: "Lenguaje C#",
+        icon: (<></>),
+      },
+      {
+        name: "MS Visual Studio",
+        icon: (<></>),
+      },
+      {
+        name: "Game Jam",
+        icon: (<></>),
+      },
+      {
+        name: "Diseño y generación procedural del nivel",
+        icon: (<></>),
+      },
+      {
+        name: "Diseño de personajes",
+        icon: (<></>),
+      },
+      {
+        name: "Animacion",
+        icon: (<></>),
+      },
+      {
+        name: "Aseprite",
+        icon: (<></>),
+      },
+      {
+        name: "Plastic SCM",
+        icon: (<></>),
+      }
+    ],
+    description:
+      "Drill Diver es una apasionante aventura de exploración y supervivencia bajo el mar, donde asumirás el papel de un intrépido buzo. ¡Adéntrate en esta odisea acuática y descubre lo que yace en el fondo del océano antes de que sea demasiado tarde!",
+    imgUrl: "/images/drilldiver_0.webp",
+    videoUrl: "",
+    githubUrl: "",
+    websiteUrl: "https://elbaronjack.itch.io/drilldiver",
   },
   {
-    icon:  <MakerSVG
+    icon:  <UnitySVG
     color="#FFFFFF"
-    size={25}
+    size={22}
   />,
     title: "Creamy Land",
     subtitle: "",
     technologies: [
       {
-        name: "Game Maker",
+        name: "Unity Engine",
         icon: (<></>),
       },
       {
-        name: "Lenguaje GML",
-        icon: (<></>),
-      },
-      {
-        name: "OperaGX",
-        icon: (<></>),
-      },
-      {
-        name: "GX.games",
-        icon: (<></>),
-      },
-      {
-        name: "Strip",
+        name: "Lenguaje C#",
         icon: (<></>),
       },
       {
