@@ -284,7 +284,7 @@ export const ProjectList: ProjectType[] = [
     ],
     description:
       "Drill Diver es una apasionante aventura de exploración y supervivencia bajo el mar, donde asumirás el papel de un intrépido buzo. ¡Adéntrate en esta odisea acuática y descubre lo que yace en el fondo del océano antes de que sea demasiado tarde!",
-    imgUrl: "/images/drilldiver_0.webp",
+    imgUrl: "/images/drilldiver_1.webp",
     videoUrl: "",
     githubUrl: "",
     websiteUrl: "https://elbaronjack.itch.io/drilldiver",
