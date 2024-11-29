@@ -6,7 +6,7 @@ export const useIconColor = () => {
   const [iconColor, setIconColor] = useState((resolvedTheme === "light" ? "white" : "black"));
 
   useEffect(() => {
-    setIconColor(resolvedTheme === "light" ? "black" : "white");
+    setIconColor(resolvedTheme === "light" ? "white" : "black");
   }, [resolvedTheme]);
 
   return iconColor;

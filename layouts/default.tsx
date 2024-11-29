@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Head } from "./head";
 
 import { Navbar } from "@/components/navbar";
@@ -7,6 +9,11 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
+
   return (
     <div className="relative flex flex-col h-screen">
       <Head />
